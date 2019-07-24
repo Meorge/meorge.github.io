@@ -1,0 +1,153 @@
+.navbar {
+    background-color: #F0F0F0AB;
+    color: #950505 !important;
+    
+    -webkit-backdrop-filter: blur(30px);
+}
+
+.nav-link {
+    /* color: #B0B0B0C0 !important; */
+    color: #950505 !important;
+}
+
+.nav-link:hover {
+    color: #ce1313 !important;
+}
+
+.nav-item.active .nav-link {
+    color: #df0808 !important;
+}
+.navbar-brand {
+    color: #df0808 !important;
+}
+.jumbotron {
+    background: linear-gradient(5deg, rgba(157,0,0,1) 0%, rgb(230, 27, 0) 100%);
+    background-repeat: no-repeat !important;
+    
+}
+
+.btn-primary {
+    background-color: #DA0A0A !important;
+    border-color: #950505 !important;
+
+}
+
+.lang {
+    border: 1px solid grey;
+    border-radius: 5px;
+    size: 5px;
+    font-size: 90%;
+    display: inline;
+    padding: 3px;
+    color: white;
+}
+
+.lang-arduino {
+    background: linear-gradient(20deg, rgba(0,151,157,1) 0%, rgba(0,200,220,1) 100%) !important;
+    border-color: rgb(19, 70, 129) !important;
+}
+
+.lang-swift {
+    background: linear-gradient(20deg, rgba(255,87,0,1) 35%, rgba(255,169,0,1) 100%) !important;
+    border-color: rgb(129, 72, 19) !important;
+}
+
+.lang-python {
+    background: linear-gradient(20deg, rgba(0,128,157,1) 0%, rgb(156, 170, 0) 100%) !important;
+    border-color: rgb(19, 70, 129) !important;
+}
+
+.lang-unity {
+    background: linear-gradient(20deg, rgb(44, 44, 44) 0%, rgb(82, 82, 82) 100%) !important;
+    border-color: rgb(10, 10, 10) !important;
+}
+
+.proj-item {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 7.5px;
+    box-shadow: 0px 0px 10px #888888B0;
+    padding: 20px;
+    margin: 20px;
+}
+
+body {
+    padding-top: 3.5rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+.subheader {
+    color: grey;
+}
+
+.svg-mono {
+    stroke: black !important;
+    fill: black !important;
+    color: black !important;
+}
+
+.lang-card {
+    background-color: #00000000;
+    text-align: center;
+    border-color: #00000000;
+}
+  
+.lang-card-ico {
+    display: block;
+    max-width:50px;
+    max-height:50px;
+    width: auto;
+    height: auto;
+    align-self: center;
+    padding-bottom: 10px;
+    
+}
+
+#unity-logo {
+    background-image: url(unity_logo.png);
+}
+
+.prog-header {
+    text-align: center;
+    font-style: oblique;
+    padding-top: 30px;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background: #1F1F1F;
+        color: white;
+    }
+
+    .svg-mono {
+        stroke: white !important;
+        fill: white !important;
+        color: white !important;
+    }
+
+    .proj-item {
+        background-color: #2A2A2A !important;
+        box-shadow: 0px 0px 10px #151515;
+    }
+
+    .lang-card-ico {
+        filter: invert(100%);
+    }
+
+    .navbar {
+        background-color: #000000AB !important;
+        -webkit-backdrop-filter: blur(30px);
+    }
+
+    .navbar-brand {
+        color: #eb2121 !important;
+    }
+
+    .nav-link {
+        /* color: #B0B0B0C0 !important; */
+        color: #950505 !important;
+    }
+
+    .nav-link:hover {
+        color: #ce1313 !important;
+    }
+} 
