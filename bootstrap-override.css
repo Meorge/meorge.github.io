@@ -163,13 +163,15 @@ body {
     text-align: center;
     border-color: #00000000;
     vertical-align: bottom;
+
+    padding: 10px;
 }
   
 .lang-card-ico {
     display: block;
-    max-width:50px;
-    max-height:50px;
-    width: auto;
+    /* max-width:50px;
+    max-height:50px; */
+    width: 40px;
     height: auto;
     align-self: center;
     padding-bottom: 10px;
