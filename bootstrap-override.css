@@ -3,6 +3,7 @@
     color: #950505 !important;
     
     -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
 }
 
 .nav-link {
@@ -224,7 +225,6 @@ body {
 
     .navbar {
         background-color: #000000AB !important;
-        -webkit-backdrop-filter: blur(30px);
     }
 
     .navbar-brand {
