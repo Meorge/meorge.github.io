@@ -146,6 +146,17 @@ body {
     
 }
 
+.inline-ico {
+    display: inline;
+    max-width:30px;
+    max-height:30px;
+    /* width: auto;
+    height: auto; */
+    vertical-align: middle;
+    /* align-self: center; */
+    /* padding-bottom: 10px; */
+}
+
 #unity-logo {
     background-image: url(unity_logo.png);
 }
@@ -174,6 +185,10 @@ body {
     }
 
     .lang-card-ico {
+        filter: invert(100%);
+    }
+
+    .inline-ico {
         filter: invert(100%);
     }
 
