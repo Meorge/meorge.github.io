@@ -209,4 +209,8 @@ body {
     .nav-link:hover {
         color: #ce1313 !important;
     }
+
+    a {
+        color: rgb(255, 160, 160);
+    }
 } 
