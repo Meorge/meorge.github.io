@@ -20,10 +20,23 @@
 .navbar-brand {
     color: #df0808 !important;
 }
+
 .jumbotron {
     background: linear-gradient(5deg, rgba(157,0,0,1) 0%, rgb(230, 27, 0) 100%);
     background-repeat: no-repeat !important;
     
+}
+
+.jumbotron-uqlick {
+    background: linear-gradient(5deg, rgb(6, 121, 54) 0%, rgb(71, 161, 116) 100%) !important;
+}
+
+.jumbotron-sneaksters {
+    background: linear-gradient(5deg, rgb(36, 36, 36) 0%, rgb(88, 88, 88) 100%) !important;
+}
+
+.jumbotron-zenith2020 {
+    background: linear-gradient(5deg, rgb(6, 52, 121) 0%, rgb(113, 71, 161) 100%) !important;
 }
 
 .btn-primary {
