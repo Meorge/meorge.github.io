@@ -1,9 +1,14 @@
 .navbar {
-    background-color: #F0F0F0AB;
+    background-color: #F0F0F0F0;
     color: #950505 !important;
-    
-    -webkit-backdrop-filter: blur(30px);
-    backdrop-filter: blur(30px);
+}
+
+@supports ((-webkit-backdrop-filter: blur(30px)) or (backdrop-filter: blur(30px))) {
+    .navbar {
+        background-color: #F0F0F0AB;
+        -webkit-backdrop-filter: blur(30px);
+        backdrop-filter: blur(30px);
+    }
 }
 
 .nav-link {
