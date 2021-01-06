@@ -2,8 +2,36 @@
 <html lang="en">
     <head>
         <title>Paraphrasinator</title>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../bootstrap-override.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    
+        <script type="text/javascript" src="mcw.js"></script>
+        <script type="text/javascript" src="thesaurus.js"></script>
+        <script type="text/javascript" src="paraphrasinator.js"></script>
     </head>
     <body>
-        beep boop
+        <div class="container">
+            <h1>Paraphrasinator</h1>
+            <p>Type stuff below, then press the "Submit" button to generate a better version</p>
+            <div class="form-group">
+                <label for="inputText">Input</label>
+                <textarea class="form-control" id="inputText"></textarea>
+
+                <label for="originalitySlider">Originality</label>
+                <input type="range" class="form-control-range" id="originalitySlider" min="0" max="100" value="70">
+            </div>
+            
+            <br/>
+            <div class="alert alert-primary" id="resultsDisplay">
+            </div>
+            
+            <button class="btn btn-primary" onclick="paraphrasinate()">Submit</button>
+        </div>
     </body>
 </html>
