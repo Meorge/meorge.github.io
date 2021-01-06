@@ -1,37 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Paraphrasinator</title>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<title>Paraphrasinator</title>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-        <link rel="stylesheet" href="../bootstrap-override.css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-    
-        <script type="text/javascript" src="mcw.js"></script>
-        <script type="text/javascript" src="thesaurus.js"></script>
-        <script type="text/javascript" src="paraphrasinator.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <h1>Paraphrasinator</h1>
-            <p>Type stuff below, then press the "Submit" button to generate a better version</p>
-            <div class="form-group">
-                <label for="inputText">Input</label>
-                <textarea class="form-control" id="inputText"></textarea>
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="../bootstrap-override.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+	
+		<script type="text/javascript" src="mcw.js"></script>
+		<script type="text/javascript" src="thesaurus.js"></script>
+		<script type="text/javascript" src="paraphrasinator.js"></script>
+	</head>
+	<body>
 
-                <label for="originalitySlider">Originality</label>
-                <input type="range" class="form-control-range" id="originalitySlider" min="0" max="100" value="70">
-            </div>
-            
-            <br/>
-            <div class="alert alert-primary" id="resultsDisplay">
-            </div>
-            
-            <button class="btn btn-primary" onclick="paraphrasinate()">Submit</button>
-        </div>
-    </body>
+		<nav class="navbar navbar-expand-md fixed-top">
+			<a class="navbar-brand" href="#">Malcolm Anderson</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+		  
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+			  <ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="../index.html">Home</a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link" href="https://github.com/Meorge">GitHub</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="https://gitlab.com/Meorge">GitLab</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="../resume.html">Resumé</a>
+				</li>
+				<li class="nav-item">
+						<a class="nav-link" href="../contact.html">Contact</a>
+				</li>
+				</ul>
+			</div>
+		</nav>
+		<main role="main">
+			<div class="container" style="padding-top: 3.5rem;">
+				<h2>Paraphrasinator</h2>
+				<p>Type stuff below, then press the "Paraphrasinate" button to generate a paraphrasinated version.<br />Drag the Originality slider to change how original the paraphrasinated text is. A low value will result in less original text, while a high value will result in more original text.</p>
+				<div class="form-group">
+					<label for="inputText">Input</label>
+					<textarea class="form-control" id="inputText"></textarea>
+
+					<br />
+					<label for="originalitySlider" id="originalityValue">Originality (70%)</label>
+					<input type="range" class="form-control-range" id="originalitySlider" min="0" max="100" value="70" onchange="document.getElementById('originalityValue').innerHTML = `Originality (${this.value}%)`;">
+				</div>
+				
+				<br/>
+				<div class="alert alert-primary" id="resultsDisplay">
+					<i>Paraphrasinated text will appear here</i>
+				</div>
+				
+				<button class="btn btn-primary" onclick="paraphrasinate()">Paraphrasinate</button>
+			</div>
+		</main>
+	</body>
 </html>
