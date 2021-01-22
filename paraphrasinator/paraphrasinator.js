@@ -25,11 +25,12 @@ function paraphrasinate()
         let word = raw_word.toLowerCase();
         word = word.replace(/[^\w]|_/g, '');
 
-
-        const randomVal = Math.random()
-
         // In some cases, keep the original word verbatim
         if (mcw.includes(word) || Math.random() > originality) {
+
+            // Add punctuation and stuff back
+            word = refixWord(raw_word, word);
+
             newListOfWords[i] = word;
             checkIfDone();
             continue;
@@ -37,7 +38,6 @@ function paraphrasinate()
 
         // Let's get the synonym for this word
         let synCallback = (synonyms) => {
-
             if (synonyms.length == 0)
             {
                 newListOfWords[i] = word;
@@ -47,14 +47,14 @@ function paraphrasinate()
 
                 // Choose a random synonym
                 const synIndex = Math.floor(Math.random() * synonyms.length);
-                const syn = synonyms[synIndex];
+                let syn = synonyms[synIndex];
+                console.log(raw_word + " -> " + syn);
+
+                // Add punctuation and stuff back
+                syn = refixWord(raw_word, syn);
 
                 // Add the synonym to the array
                 newListOfWords[i] = syn;
-
-                // TODO: Replace the punctuation
-
-                // TODO: Replace capitalization
 
                 // Check to see if we've hit the target number of words; if so, print out result
                 checkIfDone();
@@ -63,6 +63,26 @@ function paraphrasinate()
 
         thes.getSynonyms(word, synCallback);
     }
+}
+
+function refixWord(originalWord, newWord)
+{
+    // Replace the punctuation
+    let lastCharacter = originalWord.charAt(originalWord.length - 1);
+    if ((/[^\w]/g).test(lastCharacter))
+    {
+        newWord = newWord + lastCharacter
+    }
+
+    // Replace capitalization
+    let firstCharacter = originalWord.charAt(0);
+    console.log(firstCharacter);
+    if ((/[A-Z]/g).test(firstCharacter))
+    {
+        newWord = newWord.charAt(0).toUpperCase() + newWord.slice(1);
+    }
+
+    return newWord;
 }
 
 function checkIfDone()
