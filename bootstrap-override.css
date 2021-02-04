@@ -45,6 +45,10 @@
     background: linear-gradient(5deg, rgb(6, 52, 121) 0%, rgb(113, 71, 161) 100%) !important;
 }
 
+.jumbotron-canvas {
+    background: linear-gradient(5deg, rgb(165, 13, 13) 0%, rgb(255, 72, 51) 100%) !important;
+}
+
 .btn-primary {
     background-color: #DA0A0A !important;
     border-color: #950505 !important;
