@@ -1,6 +1,6 @@
 active:
   - name: Tweetinator
-    logo: canvas_macOS_icon.png
+    # logo: canvas_macOS_icon.png
     description: A local web server for scheduling Tweets
     tags:
       - id: python
