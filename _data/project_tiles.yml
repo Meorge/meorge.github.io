@@ -47,7 +47,7 @@ previous:
       gitlab: https://gitlab.com/Meorge/GameKit
 
   - name: uQlick
-    logo: uqlick_logo.png
+    logo: uQlick_logo.png
     description: A web application for improving student engagement in lectures
     tags:
       - id: js
@@ -76,7 +76,7 @@ previous:
       more: zenith2020.html
 
   - name: sCargo
-    logo: scargo_mac_logo.png
+    logo: sCargo_mac_logo.png
     description: A smart mailbox that lets you check your mail from your iOS, watchOS, or macOS device
     tags:
       - id: swift
