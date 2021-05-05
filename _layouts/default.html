@@ -7,7 +7,7 @@
 
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="bootstrap-override.css">
+	<link rel="stylesheet" href="/assets/css/bootstrap-override.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -18,7 +18,7 @@
 	<meta name="msapplication-TileColor" content="#b91d47">
 	<meta name="theme-color" content="#ffffff">
 	
-	<title>Malcolm Anderson - Contact</title>
+	<title>Malcolm Anderson - {{ page.title }}</title>
   </head>
   <body>
 	<nav class="navbar navbar-expand-md fixed-top">
@@ -32,12 +32,6 @@
 			<li class="nav-item">
 				<a class="nav-link" href="index.html">Home </a>
 			</li>
-			<!--li class="nav-item">
-				<a class="nav-link" href="#">About</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Projects</a>
-			</li-->
 			<li class="nav-item">
 					<a class="nav-link" href="https://github.com/Meorge">GitHub</a>
 			</li>
@@ -52,22 +46,10 @@
 			</li>
 		  </ul>
 		</div>
-	  </nav>
+	</nav>
 	  
 	  <main role="main">
-	  
-		<!-- Main jumbotron for a primary marketing message or call to action -->
-		<div class="jumbotron" style="background-color: white !important;">
-		  <div class="container" style="padding-top: 3.5rem; color: white;">
-
-
-			<h1 class="display-3">Contact Me</h1>
-			<p>I can be reached at <a style="color: white;" href="mailto:malcolminyo@gmail.com">malcolminyo@gmail.com</a>.</p>
-			<p><a class="btn btn-primary btn-lg" href="mailto:malcolminyo@gmail.com" role="button">Email me &raquo;</a></p>
-		  </div>
-		</div>
-
-
+        {{ content }}
 	  </main>
 	  
 	  <footer class="container">

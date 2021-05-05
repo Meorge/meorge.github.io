@@ -1,159 +1,28 @@
-<!doctype html>
-<html lang="en">
-  <head>
-	<!-- Required meta tags -->
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+---
+layout: default
+title: Sneaksters
+---
+{% capture product_tags %}
+<div class="col">
+    {% include lang_tag_lg.html lang_id="cs" lang_name="C#" %}
+    {% include lang_tag_lg.html lang_id="unity" lang_name="Unity" %}
+</div>
+{% endcapture %}
 
-	<!-- Bootstrap CSS -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link rel="stylesheet" href="bootstrap-override.css">
-	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+{% capture buttons %}
+    <a class="btn btn-primary-sneaksters btn-lg" href="https://discord.gg/hJnCfnX" role="button"><img src="/assets/images/discord.svg" height="30" class="inline-ico">&nbsp;&nbsp;Discord Server &raquo;</a>
+    <a class="btn btn-primary-sneaksters btn-lg" href="https://www.reddit.com/r/Sneaksters" role="button"><img src="/assets/images/Reddit.png" height="30" class="inline-ico">&nbsp;&nbsp;/r/Sneaksters &raquo;</a>
+{% endcapture %}
 
-	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-	<link rel="manifest" href="/site.webmanifest">
-	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#ef0000">
-	<meta name="msapplication-TileColor" content="#b91d47">
-	<meta name="theme-color" content="#ffffff">
-	
-	<title>Malcolm Anderson - Sneaksters</title>
-  </head>
-  <body>
-	<nav class="navbar navbar-expand-md fixed-top">
-		<a class="navbar-brand" href="index.html">Malcolm Anderson</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-		  <span class="navbar-toggler-icon"></span>
-		</button>
-	  
-		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
-		  <ul class="navbar-nav mr-auto">
-			<li class="nav-item">
-				<a class="nav-link" href="index.html">Home </a>
-			</li>
-			<!--li class="nav-item">
-				<a class="nav-link" href="#">About</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="#">Projects</a>
-			</li-->
-			<li class="nav-item">
-                <a class="nav-link" href="https://github.com/Meorge">GitHub</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://gitlab.com/Meorge">GitLab</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="resume.html">Resumé</a>
-			</li>
-			<li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-			</li>
-		  </ul>
-		</div>
-	  </nav>
-	  
-	  <main role="main">
-	  
-		<!-- Main jumbotron for a primary marketing message or call to action -->
-		<div class="jumbotron jumbotron-sneaksters" style="background-color: white !important;">
-          <div class="container" style="padding-top: 3.5rem; color: white;">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-auto"><h1 class="display-3"><img src="img/sneaksters_logo.svg" style="height: 120pt;"></h1></div>
-                    <div class="col">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col"><h1 class="display-3">Sneaksters<h1></div>
-                            </div>
-                            <div class="row">
-                                <div class="col"><div class="lang lang-lg lang-cs">C#</div> <div class="lang lang-lg lang-unity">Unity</div></div>
-                            </div>
-                            <div class="row">
-                                <div class="col">&nbsp;</div>
-                            </div>
-                            <div class="row">
-                                <div class="col">
-                                    <a class="btn btn-primary-sneaksters btn-lg" href="https://discord.gg/hJnCfnX" role="button"><img src="img/discord.svg" height="30" class="inline-ico">&nbsp;&nbsp;Discord Server &raquo;</a>
-                                    <a class="btn btn-primary-sneaksters btn-lg" href="https://www.reddit.com/r/Sneaksters" role="button"><img src="img/Reddit.png" height="30" class="inline-ico">&nbsp;&nbsp;/r/Sneaksters &raquo;</a>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-          </div>
-        </div>
-        
+{%
+    include jumbotron/jumbotron_product.html
+    color_style="jumbotron-sneaksters"
+    logo="/assets/images/sneaksters_logo.svg"
+    name="Sneaksters"
+    tags=product_tags
+    buttons=buttons
+%}
 
-        <div class="container">
-			<p><b>Important note: <i>Sneaksters</i> is still in development. Screenshots provided here may not reflect the current or final state of the game.</i></b></p>
-			<h3>About This Project</h3>
-			<p>
-				Every successful heist needs a good team!
-				In <i>Sneaksters</i>, each member of your squad takes one of two jobs, and works together to execute a mission.
-			</p>
-			
-			<div class="text-center">
-				<img src="img/Sneaksters/sneaksters_jobs.png" class="img-responsive" width="49%" alt="A screenshot of Sneaksters with a gemstone.">
-				<img src="img/Sneaksters/sneaksters_waitingroom.png" class="img-responsive" width="49%" alt="A screenshot of Sneaksters with a guard approaching the player.">
-			</div>
-
-			<p>
-				The <b>Thieves</b> are in the thick of the action. Their job is to navigate through a labyrinth, grab treasures, and escape without being caught by guards.
-				However, their toolset is very limited. They can't see anything beyond their first-person view, and have no way to stop guards or even open closed doors.
-			</p>
-
-			<div class="text-center">
-				<img src="img/Sneaksters/sneaksters_gemstone.png" class="img-responsive" width="50%" alt="A screenshot of Sneaksters with a gemstone.">
-				<img src="img/Sneaksters/sneaksters_chase.png" class="img-responsive" width="50%" alt="A screenshot of Sneaksters with a guard approaching the player.">
-			</div>
-
-			<p>
-				The <b>Hackers</b> watch over everything from a bird's-eye view. They can see where the guards and treasures are.
-				They can interact with certain stage elements, such as opening and closing doors, but ultimately have no direct control over the Thieves' success.
-			</p>
-
-			<div class="text-center">
-				<img src="img/Sneaksters/sneaksters_hacker.png" class="img-responsive" width="50%" alt="A screenshot of Sneaksters of the map of a level, from the perspective of a Hacker.">
-			</div>
-			<p>
-				<b>Communication is vital for a successful mission.</b> The Hackers must guide the Thievesto the treasures and keep them safe
-				from guards, and the Thieves must give the Hackers information that allows them to perform more tasks.
-			</p>
-			<p>
-				<i>Sneaksters</i> is currently in public pre-alpha. If you encounter bugs, please file them at <a href="https://github.com/Meorge/sneaksters-testing">https://github.com/Meorge/sneaksters-testing</a>. 
-			</p>
-
-
-			<h3>What I've Learned From This Project</h3>
-			<p>
-				<ul>
-					<li>Writing Unity C# for user interface, networking through Photon, and gameplay</li>
-					<li>Unity shaders for a unique visual style</li>
-					<li>Basic 3D modelling, texturing, and animation</li>
-					<li>User interface design and animation</li>
-					<li>Managing and coordinating a team of people for audio assets</li>
-					<li>Managing a public community for the open pre-alpha, including using the GitHub issue tracker</li>
-				</ul>
-			</p>
-		</div>
-
-
-
-	  </main>
-	  
-	  <footer class="container">
-		<p>&copy; Malcolm Anderson 2019-2021. Site uses Bootstrap and Jumbotron template.</p>
-	  </footer>
-	  
-
-	<!-- Optional JavaScript -->
-	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
-</html>
+<div class="container">
+    hoo hoo boy man
+</div>
