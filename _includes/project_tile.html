@@ -1,6 +1,6 @@
 <div class="col-md-3 proj-item">
     <h2 style="padding-bottom: 10px;">
-        <img src="{{ include.logo }}" style="height: 40pt; display: inline; vertical-align: middle;"> {{ include.name }}
+        {% if include.logo %}<img src="{{ include.logo }}" style="height: 40pt; display: inline; vertical-align: middle;"> {% endif %}{{ include.name }}
     </h2>
     {{ include.lang_tags }}
     <p style="padding-top: 10px;">{{ include.description }}</p>

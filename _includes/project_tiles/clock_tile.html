@@ -1,0 +1,19 @@
+{% capture tags %}
+    {% include lang_tag.html lang_id="swift" lang_name="Swift" is_large=false %}
+    {% include lang_tag.html lang_id="swiftui" lang_name="SwiftUI" is_large=false %}
+{% endcapture %}
+
+{% capture buttons %}
+    <a class="btn btn-secondary" href="https://gitlab.com/Meorge/Clock" role="button">
+        <img src="/assets/images/gitlab.svg" height="25" class="inline-ico">
+        &nbsp;&nbsp;View on GitLab &raquo;
+    </a>
+{% endcapture %}
+
+{% include project_tile.html 
+    logo="/assets/images/clock_logo.png"
+    name="Clock"
+    description="Your time on this mortal plane is extremely limited."
+    lang_tags=tags
+    buttons=buttons
+%}

@@ -1,0 +1,11 @@
+{% capture tags %}
+    {% include lang_tag.html lang_id="cs" lang_name="C#" is_large=false %}
+    {% include lang_tag.html lang_id="unity" lang_name="Unity" is_large=false %}
+{% endcapture %}
+
+{% include project_tile.html 
+    logo="/assets/images/zenith_logo.png"
+    name="Zenith 2018"
+    description="look at mountein"
+    lang_tags=tags
+%}

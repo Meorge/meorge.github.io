@@ -1,0 +1,14 @@
+{% capture tags %}
+    {% include lang_tag.html lang_id="js" lang_name="JavaScript" is_large=false %}
+{% endcapture %}
+
+{% capture buttons %}
+    <a class="btn btn-secondary" href="paraphrasinator/index.html" role="button">Try it out &raquo;</a>
+{% endcapture %}
+
+{% include project_tile.html
+    name="Paraphrasinator"
+    description="do a plagiarism"
+    lang_tags=tags
+    buttons=buttons
+%}

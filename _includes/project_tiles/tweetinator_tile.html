@@ -4,9 +4,17 @@
     {% include lang_tag.html lang_id="flask" lang_name="Flask" is_large=false %}
 {% endcapture %}
 
+{% capture buttons %}
+    <a class="btn btn-secondary" href="https://github.com/Meorge/Tweetinator" role="button">
+        <img src="assets/images/github.svg" height="25" class="inline-ico">
+        &nbsp;&nbsp;View on GitHub &raquo;
+    </a>
+{% endcapture %}
+
 {% include project_tile.html 
     logo="/assets/images/canvas_macOS_icon.png"
     name="Tweetinator"
     description="tweet scheduler"
     lang_tags=tags
+    buttons=buttons
 %}

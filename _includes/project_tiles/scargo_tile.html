@@ -1,0 +1,13 @@
+{% capture tags %}
+    {% include lang_tag.html lang_id="swift" lang_name="Swift" is_large=false %}
+    {% include lang_tag.html lang_id="python" lang_name="Python" is_large=false %}
+    {% include lang_tag.html lang_id="cpp" lang_name="C++" is_large=false %}
+    {% include lang_tag.html lang_id="arduino" lang_name="Arduino" is_large=false %}
+{% endcapture %}
+
+{% include project_tile.html 
+    logo="/assets/images/scargo_mac_logo.png"
+    name="sCargo"
+    description="smart mailbox"
+    lang_tags=tags
+%}

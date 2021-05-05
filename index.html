@@ -2,6 +2,10 @@
 layout: default
 title: Home
 ---
+{% include jumbotron/jumbotron_simple.html
+    header="I'm Malcolm. Nice to meet you."
+    body="i like to make the computer do things"
+     %}
 <div class="container">
     <h2>Current Projects</h2>
 </div>
@@ -19,7 +23,14 @@ title: Home
 </div>
 <div class="container">
     <div class="row">
-
+        {% include project_tiles/clock_tile.html %}
+        {% include project_tiles/gamekit_tile.html %}
+        {% include project_tiles/uqlick_tile.html %}
+        {% include project_tiles/doremi_tile.html %}
+        {% include project_tiles/zenith2020_tile.html %}
+        {% include project_tiles/scargo_tile.html %}
+        {% include project_tiles/rocketui_tile.html %}
+        {% include project_tiles/zenith2018_tile.html %}
     </div>
     <hr>
 </div>
@@ -29,7 +40,7 @@ title: Home
 </div>
 <div class="container">
     <div class="row">
-
+        {% include project_tiles/paraphrasinator_tile.html %}
     </div>
     <hr>
 </div>

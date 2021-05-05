@@ -22,28 +22,21 @@
   </head>
   <body>
 	<nav class="navbar navbar-expand-md fixed-top">
-		<a class="navbar-brand" href="index.html">Malcolm Anderson</a>
+		<a class="navbar-brand" href="index.html">
+			<img src="assets/images/logo_vector.svg" style="height: 2em; display: inlne; vertical-align: middle; margin: 0em;">
+			Malcolm Anderson
+		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
 		  <span class="navbar-toggler-icon"></span>
 		</button>
 	  
 		<div class="collapse navbar-collapse" id="navbarsExampleDefault">
 		  <ul class="navbar-nav mr-auto">
-			<li class="nav-item">
-				<a class="nav-link" href="index.html">Home </a>
-			</li>
-			<li class="nav-item">
-					<a class="nav-link" href="https://github.com/Meorge">GitHub</a>
-			</li>
-            <li class="nav-item">
-                <a class="nav-link" href="https://gitlab.com/Meorge">GitLab</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link" href="resume.html">Resumé</a>
-			</li>
-			<li class="nav-item active">
-					<a class="nav-link" href="contact.html">Contact <span class="sr-only">(current)</span></a>
-			</li>
+			{% for item in site.data.nav %}
+				<li class="nav-item {% if page.url == item.link %}active{% endif %}">
+					<a class="nav-link" href="{{ item.link }}">{{ item.name }} {% if page.url == item.link %}<span class="sr-only">(current)</span>{% endif %}</a>
+				</li>
+			{% endfor %}
 		  </ul>
 		</div>
 	</nav>
