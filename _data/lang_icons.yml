@@ -1,0 +1,38 @@
+- name: Python
+  icon: python_logo.svg
+
+- name: HTML/CSS
+  icon: HTML5.png
+
+- name: C
+  icon: c.svg
+
+- name: C#
+  icon: csharp.svg
+
+- name: C++
+  icon: cpp.svg
+
+- name: Swift
+  icon: Swift_logo_black.svg
+
+- name: Meteor
+  icon: MeteorJS.png
+
+- name: Unity
+  icon: Unity.png
+
+- name: MonoGame
+  icon: monogame.svg
+
+- name: Adruino
+  icon: Arduino.png
+
+- name: Bash
+  icon: Bash.png
+
+- name: Git
+  icon: Git.png
+
+- name: Qt / PyQt
+  icon: qt_logo_black_rgb.svg

@@ -1,0 +1,49 @@
+---
+layout: default
+title: Canvas
+---
+{% capture product_tags %}
+<div class="col">
+    {% include lang_tag.html lang_id="swift" lang_name="Swift" is_large=true %}
+    {% include lang_tag.html lang_id="swiftui" lang_name="SwiftUI" is_large=true %}
+</div>
+{% endcapture %}
+
+{% capture buttons %}
+{% endcapture %}
+
+{%
+    include jumbotron/jumbotron_product.html
+    color_style="jumbotron-canvas"
+    logo="/assets/images/canvas_macOS_icon.png"
+    name="Canvas"
+    tags=product_tags
+    buttons=buttons
+%}
+
+<div class="container">
+    <h3>About This Project</h3>
+    <p>
+        In many of my classes at Clark College and WSU Vancouver,
+        we have used the <a href="https://www.instructure.com">Canvas learning management system (LMS)
+        by Instructure</a> for keeping track of assignments, quizzes, and grades. Instructure offers a
+        very robust open-source mobile app for interfacing with Canvas, but on desktop computers, currently
+        the only option is the website.
+    </p>
+
+    <p>
+        My app provides an interface for the Canvas service that is familiar to those who have used the
+        mobile apps or website, but simultaneously feels right at home on macOS. 
+    </p>
+
+    <img src="assets/images/canvas/canvas_grades.png" class="img-responsive" width="100%">
+    
+    <h3>What I'm Learning From This Project</h3>
+    <p>
+        <ul>
+            <li>User interface development for macOS using Swift and SwiftUI</li>
+            <li>Retrieving data with REST APIs</li>
+            <li>Asynchronous programming and callbacks</li>
+        </ul>
+    </p>
+</div>

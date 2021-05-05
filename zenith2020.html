@@ -1,0 +1,44 @@
+---
+layout: default
+title: Zenith 2020
+---
+{% capture product_tags %}
+<div class="col">
+    {% include lang_tag.html lang_id="cs" lang_name="C#" is_large=true %}
+    {% include lang_tag.html lang_id="unity" lang_name="Unity" is_large=true %}
+</div>
+{% endcapture %}
+
+{% capture buttons %}
+{% endcapture %}
+
+{%
+    include jumbotron/jumbotron_product.html
+    color_style="jumbotron-zenith2020"
+    logo="/assets/images/zenith2020_logo.png"
+    name="Zenith 2020"
+    tags=product_tags
+    buttons=buttons
+%}
+
+<div class="container">
+    <h3>About This Project</h3>
+    <p><i>Zenith 2020</i> was created with the goal of making wirelessly-transmitted data from a rocket easy for anyone to read and understand without sacrificing power.</p>
+    <p>Every year, the Clark Aerospace team participates in the <a href="https://spaceportamericacup.com">Spaceport America Cup</a>, launching a custom-built rocket and accompanying payload to 10,000 feet (3,048 meters) in the middle of the New Mexico desert.</p>
+    
+    <p>Monitoring important rocket statistics, such as temperature and altitude, is very important for ensuring that the mission goes smoothly. Unfortunately, many computer programs designed to do this do not have very intuitive interfaces.</p>
+    
+    <p>Due to the COVID-19 pandemic, the 2020 Spaceport America Cup was cancelled, and development on <i>Zenith 2020</i> was subsequently halted.</p>
+
+    <img src="assets/images/zenith2020/zenith2020_screenshot.png" class="img-responsive" width="100%">
+    <p><i>The prototype of Zenith 2020's main user interface. At the point when development stopped due to COVID-19, the rocket payload had not yet been designed, and as such the software was not yet retrieving data.</i></p>
+    
+    <h3>What I Learned From This Project</h3>
+    <p>
+        <ul>
+            <li>Working with C++ and the Qt framework</li>
+            <li>Implementing Mapbox map functionality</li>
+            <li>Basics of serial port communication</li>
+        </ul>
+    </p>
+</div>

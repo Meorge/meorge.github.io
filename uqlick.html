@@ -1,0 +1,74 @@
+---
+layout: default
+title: uQlick
+---
+{% capture product_tags %}
+<div class="col">
+    {% include lang_tag.html lang_id="js" lang_name="JavaScript" is_large=true %}
+    {% include lang_tag.html lang_id="react" lang_name="React" is_large=true %}
+    {% include lang_tag.html lang_id="meteor" lang_name="Meteor" is_large=true %}
+</div>
+{% endcapture %}
+
+{% capture buttons %}
+{% endcapture %}
+
+{%
+    include jumbotron/jumbotron_product.html
+    color_style="jumbotron-uqlick"
+    logo="/assets/images/uqlick_logo.png"
+    name="uQlick"
+    tags=product_tags
+    buttons=buttons
+%}
+
+<div class="container">
+    <h3>About This Project</h3>
+    <p>uQlick is a web application with the goal of making lectures more interactive and engaging through quick pop-quiz sessions.</p>
+    <p>
+        Especially when college lecture sessions run on for hours at a time, it can be difficult for professors to keep their students engaged. With uQlick, the professor can easily perform spontaneous pop-quizzes for their students in the middle of lecture, allowing them to gague how well the material is being understood, and giving the students a chance to exercise their understanding.
+    </p>
+
+    <p>
+        uQlick is an expansion of the open-source project <a href="https://github.com/qlicker/qlicker">Qlicker</a>.
+        <br/>
+    </p>
+    <p>
+        Features of Qlicker and uQlick:
+        <ul>
+            <li>
+                From their computer, professors can set up courses and lecture sessions with questions for students to answer.
+                <ul><li>During lecture, the professor can control the flow of the lecture session from either their computer or their smartphone.</li></ul>
+            </li>
+            <li>
+                Students can access live lecture sessions from their smartphone, tablet, or laptop during lecture, and respond to questions as the professor asks them.
+                <ul><li>Student response statistics show up instantly for the professor, so they can easily gague student understanding.</li></ul>
+            </li>
+            <li>
+                Once a lecture session is complete, the professor can review individual students' responses to identify points of strength or weakness.
+            </li>
+        </ul>
+    </p>
+
+    <p>
+        Features unique to uQlick:
+        <ul>
+            <li><b>Institutions</b> - Qlicker was originally designed for one school to use at a time. For uQlick, the database structure was expanded to allow for many different schools, or institutions, to use at once without encroaching on others' information.</li>
+            <li><b>User documentation</b> - A new Help page system was created for uQlick, which makes it quicker for users to find information specific to their situation as well as easier for developers to modify it.<img src="assets/images/uQlick/uqlick_help.png"></li>
+            <li><b>Numerical answer number base</b> - One of the question types available in Qlicker was the numerical question, in which students must type a number as an answer. uQlick allows binary, octal, and hexadecimal numbers to be entered, depending on the professor's preference for a given question.
+            <br/><img src="assets/images/uQlick/uqlick_basechoose.png"><img src="assets/images/uQlick/uqlick_baseanswer.png"></li>
+            <li><b>Multiple choice answer shuffle</b> - Qlicker features multiple-choice questions, where the potential answers would keep the same order. In uQlick, professors can choose to have the potential answers shuffled on a per-student basis.</li>
+            <li><b>Sketch answer</b> - uQlick introduces a new question type, in which students are given a prompt and asked to draw a small sketch as a response.<img src="assets/images/uQlick/uqlick_draw.png"></li>
+            <li><b>Bootstrap 4 and UI upgrades</b> - uQlick was upgraded to use <a href="https://www.getbootstrap.com">Bootstrap 4 components</a> and <a href="https://www.material.io/resources/icons">Google Material icons</a>. Additionally, a few icons were custom-designed for uQlick.</li>
+        </ul>
+    </p>
+
+    <h3>What I Learned From This Project</h3>
+    <p>
+      <ul>
+        <li>Server-side JavaScript with the React and Meteor frameworks</li>
+        <li>Modifying and improving an existing code base</li>
+        <li>Implementing feature requests from job management</li>
+      </ul>
+    </p>
+</div>

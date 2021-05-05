@@ -1,0 +1,8 @@
+- name: macOS
+  icon: macOS.png
+
+- name: iOS
+  icon: iOS.png
+
+- name: Windows
+  icon: Windows.png

@@ -1,0 +1,28 @@
+---
+layout: default
+title: Paraphrasinator
+---
+
+<script type="text/javascript" src="/assets/js/mcw.js"></script>
+<script type="text/javascript" src="/assets/js/thesaurus.js"></script>
+<script type="text/javascript" src="/assets/js/paraphrasinator.js"></script>
+
+<div class="container" style="padding-top: 3.5rem;">
+    <h2>Paraphrasinator</h2>
+    <p>Type stuff below, then press the "Paraphrasinate" button to generate a paraphrasinated version.<br />Drag the Originality slider to change how original the paraphrasinated text is. A low value will result in less original text, while a high value will result in more original text.</p>
+    <div class="form-group">
+        <label for="inputText">Input</label>
+        <textarea class="form-control" id="inputText"></textarea>
+
+        <br />
+        <label for="originalitySlider" id="originalityValue">Originality (70%)</label>
+        <input type="range" class="form-control-range" id="originalitySlider" min="0" max="100" value="70" onchange="document.getElementById('originalityValue').innerHTML = `Originality (${this.value}%)`;">
+    </div>
+    
+    <br/>
+    <div class="alert alert-primary" id="resultsDisplay">
+        <i>Paraphrasinated text will appear here</i>
+    </div>
+    
+    <button class="btn btn-primary" onclick="paraphrasinate()">Paraphrasinate</button>
+</div>
