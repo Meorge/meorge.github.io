@@ -1,1 +1,2 @@
-<div class="lang {% if include.is_large == true %}lang-lg{% endif %} lang-{{ include.lang_id }}">{{ include.lang_name }}</div>
+
+<div class="lang {% if include.is_large == true %}lang-lg{% endif %} lang-{{ include.id }}">{{ site.data.lang_tags[include.id].name }}</div>
