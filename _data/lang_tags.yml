@@ -1,0 +1,41 @@
+swift:
+  name: Swift
+
+swiftui:
+  name: SwiftUI
+
+cs:
+  name: C#
+
+unity:
+  name: Unity
+
+monogame:
+  name: MonoGame
+
+js:
+  name: JavaScript
+  
+react:
+  name: React
+
+meteor:
+  name: Meteor
+
+cpp:
+  name: C++
+
+qt:
+  name: Qt
+
+arduino:
+  name: Arduino
+
+python:
+  name: Python
+
+mongodb:
+  name: MongoDB
+
+flask:
+  name: Flask

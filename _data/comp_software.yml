@@ -1,0 +1,14 @@
+- name: Office
+  icon: office_logo.svg
+
+- name: Google Docs
+  icon: googledocs_logo.svg
+
+- name: Creative Cloud
+  icon: creativecloud_logo.svg
+
+- name: Affinity
+  icon: AffinityDesigner.png
+
+- name: Blender
+  icon: Blender.png

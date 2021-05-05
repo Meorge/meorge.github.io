@@ -1,0 +1,109 @@
+active:
+  - name: Tweetinator
+    # logo: canvas_macOS_icon.png
+    description: A local web server for scheduling Tweets
+    tags:
+      - id: python
+      - id: mongodb
+      - id: flask
+    buttons:
+      github: https://github.com/Meorge/Tweetinator
+
+  - name: Canvas
+    logo: canvas_macOS_icon.png
+    description: A native macOS app for accessing school materials
+    tags:
+      - id: swift
+      - id: swiftui
+    buttons:
+      more: canvas-mac.html
+
+  - name: Sneaksters
+    logo: sneaksters_logo.svg
+    description: A collaborative party game about stealing treasure
+    tags:
+      - id: cs
+      - id: unity
+    buttons:
+      more: sneaksters.html
+
+previous:
+  - name: Clock
+    logo: clock_logo.png
+    description: World clocks, countdowns, timers, alarms, and stopwatches for macOS
+    tags:
+      - id: swift
+      - id: swiftui
+    buttons:
+      gitlab: https://gitlab.com/Meorge/Clock
+
+  - name: GameKit
+    logo: gamekit_logo.png
+    description: A basic 2D component-based game engine
+    tags:
+      - id: cs
+      - id: monogame
+    buttons:
+      gitlab: https://gitlab.com/Meorge/GameKit
+
+  - name: uQlick
+    logo: uqlick_logo.png
+    description: A web application for improving student engagement in lectures
+    tags:
+      - id: js
+      - id: react
+      - id: meteor
+    buttons:
+      gitlab: https://gitlab.com/Meorge/uQlick
+      more: uqlick.html
+
+  - name: Doremi
+    logo: doremi_logo.png
+    description: An extension of Unity's audio system, providing support for multiple variations of seamlessly-looped tracks
+    tags:
+      - id: cs
+      - id: unity
+    buttons:
+      github: https://github.com/Meorge/Doremi
+
+  - name: Zenith 2020
+    logo: zenith2020_logo.png
+    description: A native application for tracking rocket statistics, built for Clark Aerospace
+    tags:
+      - id: cpp
+      - id: qt
+    buttons:
+      more: zenith2020.html
+
+  - name: sCargo
+    logo: scargo_mac_logo.png
+    description: A smart mailbox that lets you check your mail from your iOS, watchOS, or macOS device
+    tags:
+      - id: swift
+      - id: python
+      - id: arduino
+      - id: cpp
+
+  - name: RocketUI
+    logo: rocketui_logo.png
+    description: A program for tracking rocket statistics, built for Clark Aerospace
+    tags:
+      - id: cs
+      - id: unity
+
+  - name: Zenith 2018
+    logo: zenith_logo.png
+    description: An augmented-reality mobile app for identifying nearby landmarks
+    tags:
+      - id: cs
+      - id: unity
+
+fun:
+  - name: Paraphrasinator
+    description: A small web app for paraphrasing an existing piece of text. GPT-3 quivers in fear.
+    tags:
+      - id: python
+      - id: js
+    buttons:
+      try: paraphrasinator.html
+      github: https://github.com/Meorge/Paraphraseinator

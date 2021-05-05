@@ -1,0 +1,37 @@
+<div class="col-md-3 proj-item">
+    <h2 style="padding-bottom: 10px;">
+        {% if include.project.logo %}<img src="/assets/images/{{ include.project.logo }}" style="height: 40pt; display: inline; vertical-align: middle;"> {% endif %}{{ include.project.name }}
+    </h2>
+    {% for lang_tag in include.project.tags %}
+        {% assign lang_id = lang_tag["id"] %}
+        {% include lang_tag.html id=lang_id is_large=false %}
+    {% endfor %}
+    <p style="padding-top: 10px;">{{ include.project.description }}</p>
+    <p>
+        {% if include.project.buttons.more %}
+            <a class="btn btn-secondary" href="{{ include.project.buttons.more }}" role="button">
+            Learn more &raquo;
+            </a>
+        {% endif %}
+
+        {% if include.project.buttons.try %}
+            <a class="btn btn-secondary" href="{{ include.project.buttons.try }}" role="button">
+            Try it out &raquo;
+            </a>
+        {% endif %}
+
+        {% if include.project.buttons.github %}
+            <a class="btn btn-secondary" href="{{ include.project.buttons.github }}" role="button">
+                <img src="assets/images/github.svg" height="25" class="inline-ico">
+                View on GitHub &raquo;
+            </a>
+        {% endif %}
+
+        {% if include.project.buttons.gitlab %}
+            <a class="btn btn-secondary" href="{{ include.project.buttons.gitlab }}" role="button">
+                <img src="assets/images/gitlab.svg" height="25" class="inline-ico">
+                View on GitLab &raquo;
+            </a>
+        {% endif %}
+    </p>
+</div>
