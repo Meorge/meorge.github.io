@@ -1,0 +1,11 @@
+{% capture tags %}
+    {% include lang_tag.html lang_id="cs" lang_name="C#" is_large=false %}
+    {% include lang_tag.html lang_id="unity" lang_name="Unity" is_large=false %}
+{% endcapture %}
+
+{% include project_tile.html 
+    logo="/assets/images/sneaksters_logo.svg"
+    name="Sneaksters"
+    description="game where you sneak and steal"
+    lang_tags=tags
+%}

@@ -1,0 +1,11 @@
+{% capture tags %}
+    {% include lang_tag.html lang_id="swift" lang_name="Swift" is_large=false %}
+    {% include lang_tag.html lang_id="swiftui" lang_name="SwiftUI" is_large=false %}
+{% endcapture %}
+
+{% include project_tile.html 
+    logo="/assets/images/canvas_macOS_icon.png"
+    name="Canvas"
+    description="cool app bro"
+    lang_tags=tags
+%}
