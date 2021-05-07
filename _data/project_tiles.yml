@@ -1,20 +1,22 @@
 active:
-  - name: Tweetinator
-    # logo: canvas_macOS_icon.png
-    description: A local web server for scheduling Tweets
+  - name: Fitcoin
+    logo: fitcoin_logo.png
+    description: A virtual currency that rewards users for taking care of themselves
     tags:
-      - id: python
-      - id: mongodb
-      - id: flask
-    buttons:
-      github: https://github.com/Meorge/Tweetinator
+      - python
+      - mongodb
+      - flask
+      - swift
+      - swiftui
+      - cs
+      - unity
 
   - name: Canvas
     logo: canvas_macOS_icon.png
     description: A native macOS app for accessing school materials
     tags:
-      - id: swift
-      - id: swiftui
+      - swift
+      - swiftui
     buttons:
       more: canvas-mac.html
 
@@ -22,18 +24,27 @@ active:
     logo: sneaksters_logo.svg
     description: A collaborative party game about stealing treasure
     tags:
-      - id: cs
-      - id: unity
+      - cs
+      - unity
     buttons:
       more: sneaksters.html
 
 previous:
+  - name: Tweetinator
+    description: A local web server for scheduling Tweets
+    tags:
+      - python
+      - mongodb
+      - flask
+    buttons:
+      github: https://github.com/Meorge/Tweetinator
+
   - name: Clock
     logo: clock_logo.png
     description: World clocks, countdowns, timers, alarms, and stopwatches for macOS
     tags:
-      - id: swift
-      - id: swiftui
+      - swift
+      - swiftui
     buttons:
       gitlab: https://gitlab.com/Meorge/Clock
 
@@ -41,8 +52,8 @@ previous:
     logo: gamekit_logo.png
     description: A basic 2D component-based game engine
     tags:
-      - id: cs
-      - id: monogame
+      - cs
+      - monogame
     buttons:
       gitlab: https://gitlab.com/Meorge/GameKit
 
@@ -50,9 +61,9 @@ previous:
     logo: uQlick_logo.png
     description: A web application for improving student engagement in lectures
     tags:
-      - id: js
-      - id: react
-      - id: meteor
+      - js
+      - react
+      - meteor
     buttons:
       gitlab: https://gitlab.com/Meorge/uQlick
       more: uqlick.html
@@ -61,8 +72,8 @@ previous:
     logo: doremi_logo.png
     description: An extension of Unity's audio system, providing support for multiple variations of seamlessly-looped tracks
     tags:
-      - id: cs
-      - id: unity
+      - cs
+      - unity
     buttons:
       github: https://github.com/Meorge/Doremi
 
@@ -70,8 +81,8 @@ previous:
     logo: zenith2020_logo.png
     description: A native application for tracking rocket statistics, built for Clark Aerospace
     tags:
-      - id: cpp
-      - id: qt
+      - cpp
+      - qt
     buttons:
       more: zenith2020.html
 
@@ -79,31 +90,31 @@ previous:
     logo: sCargo_mac_logo.png
     description: A smart mailbox that lets you check your mail from your iOS, watchOS, or macOS device
     tags:
-      - id: swift
-      - id: python
-      - id: arduino
-      - id: cpp
+      - swift
+      - python
+      - arduino
+      - cpp
 
   - name: RocketUI
     logo: rocketui_logo.png
     description: A program for tracking rocket statistics, built for Clark Aerospace
     tags:
-      - id: cs
-      - id: unity
+      - cs
+      - unity
 
   - name: Zenith 2018
     logo: zenith_logo.png
     description: An augmented-reality mobile app for identifying nearby landmarks
     tags:
-      - id: cs
-      - id: unity
+      - cs
+      - unity
 
 fun:
   - name: Paraphrasinator
     description: A small web app for paraphrasing an existing piece of text. GPT-3 quivers in fear.
     tags:
-      - id: python
-      - id: js
+      - python
+      - js
     buttons:
       try: paraphrasinator.html
       github: https://github.com/Meorge/Paraphraseinator
