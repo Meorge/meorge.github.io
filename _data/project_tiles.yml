@@ -30,6 +30,15 @@ active:
       more: sneaksters.html
 
 previous:
+  - name: CalLog
+    logo: callog_logo.png
+    description: An app for tracking calorie intake and output
+    tags:
+      - swift
+      - swiftui
+    buttons:
+      gitlab: https://gitlab.com/Meorge/CalLog
+
   - name: Tweetinator
     description: A local web server for scheduling Tweets
     tags:
