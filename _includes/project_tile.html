@@ -1,7 +1,10 @@
 <div class="col-md-4 my-2 d-flex">
     <div class="container proj-item">
         <h2 style="padding-bottom: 10px;">
-            {% if include.project.logo %}<img src="/assets/images/{{ include.project.logo }}" style="height: 40pt; display: inline; vertical-align: middle;"> {% endif %}{{ include.project.name }}
+            {% if include.project.logo %}
+                <img src="/assets/images/{{ include.project.logo }}" style="height: 40pt; display: inline; vertical-align: middle;" alt="Logo">
+                {% endif %}
+                {{ include.project.name }}
         </h2>
         {% for lang_tag in include.project.tags %}
             {% include lang_tag.html id=lang_tag is_large=false %}
@@ -22,14 +25,14 @@
 
             {% if include.project.buttons.github %}
                 <a class="btn btn-secondary" href="{{ include.project.buttons.github }}" role="button">
-                    <img src="assets/images/github.svg" height="25" class="inline-ico">
+                    <img src="assets/images/github.svg" height="25" class="inline-ico" alt="GitHub icon">
                     View on GitHub &raquo;
                 </a>
             {% endif %}
 
             {% if include.project.buttons.gitlab %}
                 <a class="btn btn-secondary" href="{{ include.project.buttons.gitlab }}" role="button">
-                    <img src="assets/images/gitlab.svg" height="25" class="inline-ico">
+                    <img src="assets/images/gitlab.svg" height="25" class="inline-ico" alt="GitLab icon">
                     View on GitLab &raquo;
                 </a>
             {% endif %}

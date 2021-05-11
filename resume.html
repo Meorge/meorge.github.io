@@ -11,211 +11,80 @@ title: Resumé
 
 <div class="container">
     <h1>Education</h1>
+    <div class="row">
+        {% for tile in site.data.resume_tiles.education %}
+            {% include resume_tile.html data=tile %}
+        {% endfor %}
+    </div>
+</div>
+<hr/>
 
+<div class="container">
+    <h1>Work & Volunteer Experience</h1>
+    <div class="row">
+        {% for tile in site.data.resume_tiles.work %}
+            {% include resume_tile.html data=tile %}
+        {% endfor %}
+    </div>
+</div>
+<hr />
+
+<div class="container">
+    <h1>Skills</h1>
     <div class="row">
         <div class="col-md-12 my-2 d-flex">
             <div class="container proj-item">
-                <h2>Washington State University of Vancouver</h2>
-                <h6 class="subheader">Summer 2020 - present</h6>
-                <p>Currently:</p>
-                <ul>
-                    <li>Working towards BS in Computer Science</li>
-                    <li>4.0 GPA</li>
-                    <li>President's Honor Roll</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6 my-2 d-flex">
-            <div class="container proj-item">
-                <h2>Clark College</h2>
-                <h6 class="subheader">Summer 2018 - Summer 2020</h6>
-                <p>Graduated with:</p>
-                <ul>
-                    <li>Associate in Computer Engineering & Electrical Engineering</li>
-                    <li>3.95 cumulative GPA</li>
-                    <li>Vice President's List for all quarters</li>
-                    <li>High Honors</li>
-                    <li>Invited to Phi Theta Kappa</li>
-                    <li>Served as President, Vice President, and Treasurer of Engineering & Computer Science Club</li>
-                    <li>Participated in Clark Aerospace Program as software developer</li>
-                </ul>
-            </div>
-        </div>
-    
-        <div class="col-md-6 my-2 d-flex">
-            <div class="container proj-item">
-                <h2>Columbia River High School</h2>
-                <h6 class="subheader">Summer 2014 - Summer 2018</h6>
-                <p>Graduated with:</p>
-                <ul>
-                <li>International Baccalaurate Diploma</li>
-                <li>Washington State Seal of Biliteracy</li>
-                <li>Honors</li>
-                </ul>
-            </div>
-        </div>
-    </div>
+                <h2>Software Development Experience</h2>
+                <p>I have experience with a variety of programming languages and environments.</p>
 
-    </div>
-    <hr/>
-    <div class="container">
-        <h1>Work & Volunteer Experience</h1>
-        <div class="row">
-            <div class="col-md-12 my-2 d-flex">
-                <div class="container proj-item">
-                    <h2>Lab Aide for Computer Science</h2>
-                    <h6 class="subheader">Spring 2019 - Spring 2020</h6>
-                    <ul>
-                    <li>Editing textbook materials used by Clark College</li>
-                    <li>Wrote textbook chapter on Python for Clark College</li>
-                    <li>Assisted students with computer science and engineering labs</li>
-                    <li>Contributed to open-source web application</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 my-2 d-flex">
-                <div class="container proj-item">
-                    <h2>Software Developer</h2>
-                    <h5>Clark Aerospace</h5>
-                    <h6 class="subheader">Fall 2018 - Spring 2020</h6>
-                    <ul>
-                        <li>Developed <a href="zenith2020.html">software</a> for rocket tracking and recovery</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-6 my-2 d-flex">
-                <div class="container proj-item">
-                    <h2>Columbia River IB Parent Group</h2>
-                    <h6 class="subheader">2017 - 2018</h6>
-                    <ul>
-                    <li>Updated layout, content of website in coordination with group lead</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col-md-6 my-2 d-flex">
-                <div class="container proj-item">
-                    <h2>One of a Kind Drumline</h2>
-                    <h6 class="subheader">2007 - 2018</h6>
-                    <ul>
-                    <li>Performed for:
-                        <ul>
-                        <li>Portland Trail Blazers halftime</li>
-                        <li>Portland Timbers halftime</li>
-                        <li>Susan G. Komen Race for the Cure</li>
-                        <li>Fort Vancouver 4th of July Celebration</li>
-                        <li>Camp Agape</li>
-                        </ul>
-                    </li>
-                    <li>Assisted in instruction of new students</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12 my-2 d-flex">
-                <div class="container proj-item">
-                    <h2>Clark County Public Utilities District (Stream Team)</h2>
-                    <h6 class="subheader">2014-2016</h6>
-                    <ul>
-                    <li>40 hours of instruction on stream ecology</li>
-                    <li>Many hours of stream restoration, planting and potting trees</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr/>
-    <div class="container">
-        <h1>Skills</h1>
-        <div class="row">
-            <div class="col-md-12 my-2 d-flex">
-                <div class="container proj-item">
-                    <h2>Software Development Experience</h2>
-                    <p>I have experience with a variety of programming languages and environments.</p>
-
-                    <div class="container">
-                    <div class="row row-cols-3 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-                        {% for item in site.data.lang_icons %}
-                        <div class="col mb-2">
+                <div class="container">
+                <div class="row">
+                    {% for item in site.data.lang_icons %}
+                        <div class="col-md-2 mb-2 mx-auto d-flex justify-content-center">
                             <div class="card lang-card">
-                                <img src="assets/images/{{ item.icon }}" class="lang-card-ico">{{ item.name }}
+                                <img src="assets/images/{{ item.icon }}" class="lang-card-ico" alt="">{{ item.name }}
+                            </div>
+                        </div>
+                    {% endfor %}
+                </div>
+                </div>
+            </div>
+        </div>  
+        <div class="col-md-12 my-2 d-flex">
+            <div class="container proj-item">
+                <h2>Proficient with Computer Software</h2>
+                <div class="container">
+                    <div class="row">
+                        {% for item in site.data.comp_software %}
+                            <div class="col-md-2 mb-2 mx-auto d-flex justify-content-center">
+                                <div class="card lang-card">
+                                    <img src="assets/images/{{ item.icon }}" class="lang-card-ico" alt="">{{ item.name }}
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-12 my-2 d-flex">
+            <div class="container proj-item">
+                <h2>Comfortable with Modern OSs</h2>
+                <div class="container">
+                    <div class="row">
+                        {% for item in site.data.operating_systems %}
+                        <div class="col-md-2 mb-2 mx-auto d-flex justify-content-center">
+                            <div class="card lang-card">
+                                <img src="assets/images/{{ item.icon }}" class="lang-card-ico" alt="">{{ item.name }}
                             </div>
                         </div>
                         {% endfor %}
                     </div>
-                    </div>
-                </div>
-            </div>  
-        </div>
-        <div class="row">
-            <div class="col-md-12 my-2 d-flex">
-                <div class="container proj-item">
-                    <h2>Proficient with Computer Software</h2>
-                    <div class="container">
-                        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-                            {% for item in site.data.comp_software %}
-                            <div class="col mb-2">
-                                <div class="card lang-card">
-                                    <img src="assets/images/{{ item.icon }}" class="lang-card-ico">{{ item.name }}
-                                </div>
-                            </div>
-                            {% endfor %}
-                        </div>
-                    </div>
                 </div>
             </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 my-2 d-flex">
-                    <div class="container proj-item">
-                        <h2>Comfortable with Modern OSs</h2>
-                        <div class="container">
-                            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
-                                {% for item in site.data.operating_systems %}
-                                <div class="col mb-2">
-                                    <div class="card lang-card">
-                                        <img src="assets/images/{{ item.icon }}" class="lang-card-ico">{{ item.name }}
-                                    </div>
-                                </div>
-                                {% endfor %}
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <div class="row">   
-            <div class="col-md-6 my-2 d-flex">
-                <div class="container proj-item">
-                    <h2>Critical Thinking & Time Management</h2>
-                    <p>As a graduate of the International Baccalaurate Diploma Programme, I know how important good time management is.</br>That's why I always use lists and schedules to make sure I'm using my time the best way I can.</p>
-                </div>
-            </div>
-
-            <div class="col-md-6 my-2 d-flex">
-                <div class="container proj-item">
-                    <h2>Works Well in Groups</h2>
-                    <p>The ability to work well with others is one of the most important qualities a good worker can have.</br>The IB Diploma Programme taught me how to be a part of a team, and projects like <a href="sneaksters.html">Sneaksters</a> and <a href="zenith2020.html">Zenith 2020</a> have given me lots of practice.</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12 my-2 d-flex">
-                <div class="col proj-item">
-                    <h2>Can Converse in Spanish</h2>
-                    <p>I've studied Spanish for six years and earned the Washington State Seal of Biliteracy when I graduated from high school.</p>
-                </div>
-            </div>
-        </div>
-
-
-        </div>
+        </div> 
+        {% for tile in site.data.resume_tiles.skills %}
+            {% include resume_tile.html data=tile %}
+        {% endfor %}
     </div>
+</div>
 
