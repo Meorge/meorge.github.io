@@ -10,6 +10,8 @@ active:
       - swiftui
       - cs
       - unity
+    buttons:
+      more: fitcoin.html
 
   - name: Canvas
     logo: canvas_macOS_icon.png

@@ -1,0 +1,90 @@
+---
+layout: default
+title: Fitcoin
+---
+{% capture product_tags %}
+<div class="col">
+    {% include lang_tag.html id="python" is_large=true %}
+    {% include lang_tag.html id="mongodb" is_large=true %}
+    {% include lang_tag.html id="flask" is_large=true %}
+    {% include lang_tag.html id="swift" is_large=true %}
+    {% include lang_tag.html id="swiftui" is_large=true %}
+    {% include lang_tag.html id="cs" is_large=true %}
+    {% include lang_tag.html id="unity" is_large=true %}
+</div>
+{% endcapture %}
+
+{% capture buttons %}
+{% endcapture %}
+
+{%
+    include jumbotron/jumbotron_product.html
+    color_style="jumbotron-fitcoin"
+    logo="/assets/images/fitcoin_logo.png"
+    name="Fitcoin"
+    tags=product_tags
+    buttons=buttons
+%}
+
+<div class="container">
+    <h2>About This Project</h2>
+    <p>
+        Fitcoin is a service that encourages users to take care of themselves.
+        It grants users a virtual currency in exchange for health and well-being
+        activities, such as burning calories, meditating, and sleeping. This currency
+        can be used in games that implement the Fitcoin API to purchase in-game items.
+    </p>
+    <hr/>
+    <h2>Background</h2>
+    <p>
+        When I was in middle school, I owned a video game console called the Nintendo 3DS.
+        This game console had a built-in pedometer with which it tracked the user's steps.
+        For every 100 steps the user took, they would earn one "Play Coin", which could in
+        turn be exchanged in various games for small rewards or hints. I really liked this
+        concept, and it stuck with me for quite a while.
+    </p>
+    <p>
+        Many years later, I bought a Nintendo Switch, and with it, the game <i>Ring Fit Adventure</i>,
+        with which I promptly fell in love. Nintendo did an amazing job of gamifying exercise and
+        taking care of oneself, both with <i>Ring Fit Adventure</i> recently and with
+        the Nintendo 3DS Play Coins many years ago. Since then, working on projects that can help
+        a user's wellbeing has become a priority for me.
+    </p>
+    <p>
+        Playing <i>Ring Fit Adventure</i> brought me back to memories of the Nintendo 3DS's
+        Play Coins, and it occurred to me that there was a lot of untapped potential with the
+        concept of a virtual currency tied to self-care. The Play Coin system was tied only to the user's
+        step count, but with the capabilities of a modern smartphone, many more statistics can be
+        tracked and recorded. Recreating and expanding on the Play Coin model would also require me to
+        develop a variety of different system components.
+    </p>
+    <hr/>
+
+    <h2>Components</h2>
+    <p>
+        The Fitcoin service is made up of three major components: a web server which handles the underlying
+         database and API requests, an iOS app which allows a user to manage their Fitcoin balance, and a game
+         API which allows developers to create games that users can spend their Fitcoin in.
+    </p>
+    <hr/>
+    <!-- <h3>Fitcoin Server</h3>
+    <p>Information about server goes here</p>
+
+    <hr/>
+    <h3>Fitcoin App</h3>
+    <p>Information about app goes here</p>
+
+    <hr/>
+    <h3>Fitcoin for Unity</h3>
+    <p>Information about Unity library goes here</p>
+    
+    <hr/>
+    <h2>What I Learned From This Project</h2>
+    <p>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+        </ul>
+    </p> -->
+</div>

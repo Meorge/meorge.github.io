@@ -28,25 +28,30 @@
 }
 
 .jumbotron {
-    background: linear-gradient(5deg, rgba(157,0,0,1) 0%, rgb(230, 27, 0) 100%);
+    background-color: rgb(175, 20, 30) !important;
     background-repeat: no-repeat !important;
     
 }
 
 .jumbotron-uqlick {
-    background: linear-gradient(5deg, rgb(9, 82, 33) 0%, rgb(49, 151, 49) 100%) !important;
+    /* background-color: rgb(45, 97, 45) !important; */
+    background-color: rgb(40, 118, 84) !important;
 }
 
 .jumbotron-sneaksters {
-    background: linear-gradient(5deg, rgb(36, 36, 36) 0%, rgb(88, 88, 88) 100%) !important;
+    background-color: rgb(50, 50, 50) !important;
 }
 
 .jumbotron-zenith2020 {
-    background: linear-gradient(5deg, rgb(6, 52, 121) 0%, rgb(113, 71, 161) 100%) !important;
+    background-color: rgb(65, 38, 97) !important;
 }
 
 .jumbotron-canvas {
-    background: linear-gradient(5deg, rgb(165, 13, 13) 0%, rgb(255, 72, 51) 100%) !important;
+    background-color: rgb(165, 61, 42) !important;
+}
+
+.jumbotron-fitcoin {
+    background-color: rgb(152, 33, 65) !important;
 }
 
 .btn-primary {
@@ -69,96 +74,82 @@
 .row-less-vert-margin { margin-bottom: -10px; }
 
 .lang {
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     border-radius: 5px;
     size: 5px;
     font-size: 90%;
     display: inline;
-    padding: 3px;
+    padding: 6px;
     color: white;
 }
 
 .lang-lg {
     font-size: 120% !important;
-    padding: 5px !important;
+    padding: 6px !important;
 }
 
 .lang-arduino {
-    background: linear-gradient(20deg, rgba(0,151,157,1) 0%, rgba(0,200,220,1) 100%) !important;
-    border-color: rgb(19, 70, 129) !important;
+    background-color: rgb(20, 160, 220) !important;
 }
 
 .lang-swift {
-    background: linear-gradient(20deg, rgba(255,87,0,1) 35%, rgba(255,169,0,1) 100%) !important;
-    border-color: rgb(129, 72, 19) !important;
+    background-color: rgb(230, 80, 50) !important;
 }
 
 .lang-swiftui {
-    background: linear-gradient(20deg, rgb(26, 28, 180) 35%, rgb(0, 183, 255) 100%) !important;
-    border-color: rgb(19, 26, 129) !important;
+    background-color: rgb(17, 140, 206) !important;
 }
 
 .lang-python {
-    background: linear-gradient(20deg, rgba(0,128,157,1) 0%, rgb(156, 170, 0) 100%) !important;
-    border-color: rgb(19, 70, 129) !important;
+    background-color: rgb(45, 79, 152) !important;
 }
 
 .lang-react {
-    background: linear-gradient(20deg, rgba(0,128,157,1) 0%, rgb(31, 139, 189) 100%) !important;
-    border-color: rgb(19, 70, 129) !important;
+    background-color: rgb(30, 150, 180) !important;
 }
 
 .lang-meteor {
-    background: linear-gradient(20deg, rgb(255, 30, 0) 35%, rgb(255, 115, 0) 100%) !important;
-    border-color: rgb(129, 54, 19) !important;
+    background-color: rgb(255, 100, 0) !important;
 }
 
 .lang-monogame {
-    background: linear-gradient(20deg, rgb(255, 30, 0) 35%, rgb(255, 38, 0) 100%) !important;
-    border-color: rgb(129, 54, 19) !important;
+    background-color: rgb(255, 40, 15) !important;
 }
 
 .lang-qt {
-    background: linear-gradient(20deg, rgb(20, 170, 0) 0%, rgb(76, 218, 58) 100%) !important;
-    border-color: rgb(28, 129, 19) !important;
+    background-color: rgb(47, 182, 26) !important;
 }
 
 .lang-cpp {
-    background: linear-gradient(20deg, rgb(22, 94, 177) 0%, rgb(73, 100, 252) 100%) !important;
-    border-color: rgb(19, 70, 129) !important;
+    background-color: rgb(75, 100, 250) !important;
 }
 
 .lang-cs {
-    background: linear-gradient(20deg, rgb(89, 22, 177) 0%, rgb(151, 73, 252) 100%) !important;
-    border-color: rgb(68, 11, 90) !important;
+    background-color: rgb(120, 40, 225) !important;
 }
 
 .lang-js {
-    background: linear-gradient(20deg, rgb(241, 225, 0) 0%, rgb(255, 217, 0) 100%) !important;
-    border-color: rgb(129, 103, 19) !important;
+    background-color: rgb(240, 220, 20) !important;
     color: black;
 }
 
 .lang-unity {
-    background: linear-gradient(20deg, rgb(44, 44, 44) 0%, rgb(82, 82, 82) 100%) !important;
-    border-color: rgb(10, 10, 10) !important;
+    background-color: rgb(80, 80, 80) !important;
 }
 
 .lang-flask {
-    background: linear-gradient(20deg, rgb(223, 223, 223) 0%, rgb(247, 247, 247) 100%) !important;
+    background-color: rgb(240, 240, 240) !important;
     color: black;
-    border-color: rgb(10, 10, 10) !important;
 }
 
 .lang-mongodb {
-    background: linear-gradient(20deg, rgb(35, 109, 3) 0%, rgb(71, 191, 65) 100%) !important;
-    border-color: rgb(38, 33, 4) !important;
+    background-color: rgb(50, 180, 40) !important;
 }
 
 .proj-item {
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 7.5px;
-    box-shadow: 0px 0px 10px #cfcfcf79;
+    box-shadow: 0px 0px 4px #cfcfcf79;
     padding: 20px;
 }
 
@@ -229,7 +220,7 @@ body {
 
     .proj-item {
         background-color: #2A2A2A !important;
-        box-shadow: 0px 0px 10px #151515;
+        box-shadow: 0px 0px 4px #151515;
     }
 
     .lang-card-ico {
