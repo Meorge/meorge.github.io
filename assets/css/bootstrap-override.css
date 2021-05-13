@@ -138,12 +138,35 @@
 }
 
 .lang-flask {
-    background-color: rgb(240, 240, 240) !important;
-    color: black;
+    background-color: rgb(16, 16, 16) !important;
 }
 
 .lang-mongodb {
     background-color: rgb(50, 180, 40) !important;
+}
+
+.lang-html {
+    background-color: rgb(210, 70, 30) !important;
+}
+
+.lang-c {
+    background-color: rgb(155, 30, 180) !important;
+}
+
+.lang-bash {
+    background-color: rgb(70, 150, 10) !important;
+}
+
+.lang-git {
+    background-color: rgb(245, 80, 40) !important;
+}
+
+.lang-mysql {
+    background-color: rgb(30, 115, 140) !important;
+}
+
+.lang-scala {
+    background-color: rgb(220, 50, 50) !important;
 }
 
 .proj-item {
@@ -174,6 +197,8 @@ body {
     border-color: #00000000;
     vertical-align: bottom;
 
+    color: white;
+
     padding: 10px;
 }
   
@@ -182,9 +207,10 @@ body {
     /* max-width:50px;
     max-height:50px; */
     width: 40px;
-    height: auto;
+    height: 40px;
     align-self: center;
     padding-bottom: 10px;
+    filter: invert(100%);
     
 }
 

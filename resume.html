@@ -40,9 +40,9 @@ title: Resumé
                 <div class="container">
                 <div class="row">
                     {% for item in site.data.lang_icons %}
-                        <div class="col-md-2 mb-2 mx-auto d-flex justify-content-center">
-                            <div class="card lang-card">
-                                <img src="assets/images/{{ item.icon }}" class="lang-card-ico" alt="">{{ item.name }}
+                        <div class="col-auto col-md-2 mb-3 mx-auto justify-content-center">
+                            <div class="card lang-card lang-{{ item[0] }}">
+                                <img src="assets/images/lang_icons/{{ item[1].icon }}.svg" class="lang-card-ico" alt="">{{ item[1].name }}
                             </div>
                         </div>
                     {% endfor %}

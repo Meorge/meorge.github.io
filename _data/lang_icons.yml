@@ -1,38 +1,71 @@
-- name: Python
-  icon: python_logo.svg
+python:
+  name: Python
+  icon: Python
 
-- name: HTML/CSS
-  icon: HTML5.png
+html:
+  name: HTML/CSS
+  icon: HTML5
 
-- name: C
-  icon: c.svg
+c:
+  name: C
+  icon: C
 
-- name: C#
-  icon: csharp.svg
+cs:
+  name: C#
+  icon: CS
 
-- name: C++
-  icon: cpp.svg
+cpp:
+  name: C++
+  icon: CPP
 
-- name: Swift
-  icon: Swift_logo_black.svg
+swift:
+  name: Swift
+  icon: Swift
 
-- name: Meteor
-  icon: MeteorJS.png
+meteor:
+  name: Meteor
+  icon: Meteor
 
-- name: Unity
-  icon: Unity.png
+unity:
+  name: Unity
+  icon: Unity
 
-- name: MonoGame
-  icon: monogame.svg
+monogame:
+  name: MonoGame
+  icon: MonoGame
 
-- name: Adruino
-  icon: Arduino.png
+arduino:
+  name: Arduino
+  icon: Arduino
 
-- name: Bash
-  icon: Bash.png
+bash:
+  name: Bash
+  icon: Bash
 
-- name: Git
-  icon: Git.png
+git:
+  name: Git
+  icon: Git
 
-- name: Qt / PyQt
-  icon: qt_logo_black_rgb.svg
+qt:
+  name: Qt/PyQt
+  icon: Qt
+
+mongodb:
+  name: MongoDB
+  icon: MongoDB
+
+mysql:
+  name: MySQL
+  icon: MySQL
+
+scala:
+  name: Scala
+  icon: Scala
+
+swiftui:
+  name: SwiftUI
+  icon: Swift
+
+flask:
+  name: Flask
+  icon: Flask
