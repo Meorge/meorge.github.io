@@ -211,7 +211,16 @@ body {
     align-self: center;
     padding-bottom: 10px;
     filter: invert(100%);
+
     
+}
+
+.small-ico {
+    display: inline-block;
+    white-space: nowrap;
+    max-height: 1em;
+    max-width: 1em;
+    filter: invert(100%);
 }
 
 .inline-ico {
