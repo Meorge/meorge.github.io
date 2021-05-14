@@ -69,3 +69,11 @@ swiftui:
 flask:
   name: Flask
   icon: Flask
+
+js:
+  name: JavaScript
+  icon: JavaScript
+
+react:
+  name: React
+  icon: React

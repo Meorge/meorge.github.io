@@ -40,7 +40,7 @@ title: Resumé
                 <div class="container">
                 <div class="row">
                     {% for item in site.data.lang_icons %}
-                        <div class="col-auto col-md-2 mb-3 mx-auto justify-content-center">
+                        <div class="col-auto col-md-3 mb-3 mx-auto justify-content-center">
                             <div class="card lang-card lang-{{ item[0] }}">
                                 <img src="assets/images/lang_icons/{{ item[1].icon }}.svg" class="lang-card-ico" alt="">{{ item[1].name }}
                             </div>
@@ -53,12 +53,13 @@ title: Resumé
         <div class="col-md-12 my-2 d-flex">
             <div class="container proj-item">
                 <h2>Proficient with Computer Software</h2>
+                <br>
                 <div class="container">
                     <div class="row">
                         {% for item in site.data.comp_software %}
-                            <div class="col-md-2 mb-2 mx-auto d-flex justify-content-center">
-                                <div class="card lang-card">
-                                    <img src="assets/images/{{ item.icon }}" class="lang-card-ico" alt="">{{ item.name }}
+                            <div class="col-auto col-md-2 mb-3 mx-auto justify-content-center">
+                                <div class="card lang-card color-{{ item[0] }}">
+                                    <img src="assets/images/lang_icons/{{ item[1].name }}.svg" class="lang-card-ico" alt="">{{ item[1].name }}
                                 </div>
                             </div>
                         {% endfor %}
@@ -66,7 +67,7 @@ title: Resumé
                 </div>
             </div>
         </div>
-        <div class="col-md-12 my-2 d-flex">
+        <!-- <div class="col-md-12 my-2 d-flex">
             <div class="container proj-item">
                 <h2>Comfortable with Modern OSs</h2>
                 <div class="container">
@@ -81,7 +82,7 @@ title: Resumé
                     </div>
                 </div>
             </div>
-        </div> 
+        </div>  -->
         {% for tile in site.data.resume_tiles.skills %}
             {% include resume_tile.html data=tile %}
         {% endfor %}
