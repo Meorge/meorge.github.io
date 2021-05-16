@@ -67,24 +67,113 @@ title: Fitcoin
          API which allows developers to create games that users can spend their Fitcoin in.
     </p>
     <hr/>
-    <!-- <h3>Fitcoin Server</h3>
-    <p>Information about server goes here</p>
+
+    <p><b>NOTE: As much as I'd love it to be, Fitcoin currently doesn't have a persistent server running. In order to test
+        this code, you will need to spin up your own copy of the Fitcoin Server and the appropriate URLs in the code.
+    </b></p>
+    <hr/>
+
+    <div class="proj-item">
+        <h3>Fitcoin Server</h3>
+        <div class="mb-2">
+            {% include lang_tag.html id="python" is_large=false %}
+            {% include lang_tag.html id="mongodb" is_large=false %}
+            {% include lang_tag.html id="flask" is_large=false %}
+        </div>
+        <div class="mb-2">
+            <a class="btn btn-secondary" href="https://gitlab.com/Meorge/FitcoinServerV2" role="button">
+                <img src="assets/images/gitlab.svg" height="25" class="inline-ico" alt="GitLab icon">
+                View on GitLab &raquo;
+            </a>
+        </div>
+        
+        <p>The Fitcoin Server handles API requests from users and game services. This includes:</p>
+        <ul>
+            <li>Creating user accounts</li>
+            <li>Getting the balance of a user account</li>
+            <li>Getting the transaction history for a user account</li>
+            <li>Getting the game services linked to a user account</li>
+            <li>Linking a game service to a user account using a QR code</li>
+            <li>Creating a game service</li>
+            <li>Making Fitcoin purchases for a game service on behalf of a user account</li>
+        </ul>
+        <p>The server logic is written in Python with the <a href="https://flask.palletsprojects.com/en/2.0.x/">Flask library</a>, and uses MongoDB for its database.</p>
+
+    </div>
 
     <hr/>
-    <h3>Fitcoin App</h3>
-    <p>Information about app goes here</p>
+    
+    <div class="proj-item">
+        <h3>Fitcoin App for iOS</h3>
+        <div class="mb-2">
+            {% include lang_tag.html id="swift" is_large=false %}
+            {% include lang_tag.html id="swiftui" is_large=false %}
+        </div>
+        <div class="mb-2">
+            <a class="btn btn-secondary" href="https://gitlab.com/Meorge/Fitcoin-iOSv2" role="button">
+                <img src="assets/images/gitlab.svg" height="25" class="inline-ico" alt="GitLab icon">
+                View on GitLab &raquo;
+            </a>
+        </div>
+
+        <p>The Fitcoin iOS app provides an interface with which users can manage their Fitcoin account. This includes:</p>
+        <ul>
+            <li>Viewing current Fitcoin balance</li>
+            <li>"Depositing" Fitcoin to account based on Active Energy (calories burned) in the Health app</li>
+            <li>Viewing history of Fitcoin transactions (in-game purchases and deposits)</li>
+            <li>Viewing list of linked game services</li>
+            <li>Linking game services by scanning a QR code</li>
+            <li>Unlinking game services</li>
+        </ul>
+
+        <p><b>NOTE: The Fitcoin iOS app currently does <i>not</i> have support for logging into or switching accounts; the account
+        credentials are hardcoded. If/when I return to this project in the future, this will be one of my top priorities to fix.</b></p>
+
+        <div class="text-center">
+            <img src="assets/images/fitcoin/fitcoin_ios_balance.png" alt="Screenshot of the Balance screen for the Fitcoin iOS app" style="max-width: 20%;">
+            <img src="assets/images/fitcoin/fitcoin_ios_transactions.png" alt="Screenshot of the Transactions screen for the Fitcoin iOS app" style="max-width: 20%;">
+            <img src="assets/images/fitcoin/fitcoin_ios_games.png" alt="Screenshot of the Games screen for the Fitcoin iOS app" style="max-width: 20%;">
+        </div>
+    </div>
 
     <hr/>
-    <h3>Fitcoin for Unity</h3>
-    <p>Information about Unity library goes here</p>
+
+    <div class="proj-item">
+        <h3>Fitcoin for Unity</h3>
+        <div class="mb-2">
+            {% include lang_tag.html id="cs" is_large=false %}
+            {% include lang_tag.html id="unity" is_large=false %}
+        </div>
+
+        <div class="mb-2">
+            <a class="btn btn-secondary" href="https://github.com/Meorge/FitcoinUnity" role="button">
+                <img src="assets/images/github.svg" height="25" class="inline-ico" alt="GitHub icon">
+                View API on GitHub &raquo;
+            </a>
+            <a class="btn btn-secondary" href="https://github.com/Meorge/FitcoinUnityExample" role="button">
+                <img src="assets/images/github.svg" height="25" class="inline-ico" alt="GitHub icon">
+                View Example on GitHub &raquo;
+            </a>
+        </div>
+
+        <p>Fitcoin for Unity provides an API for Unity game developers to link their games to the Fitcoin service with ease, using asynchronous function calls.</p>
+        <p>To test and showcase the API, a simple example Unity project was concurrently developed that demonstrates the API's capabilities.</p>
+        <div class="text-center">
+            <img src="assets/images/fitcoin/fitcoin_unity_qr.png" alt="Screenshot of the Balance screen for the Fitcoin iOS app" style="max-width: 32%;">
+            <img src="assets/images/fitcoin/fitcoin_unity_empty.png" alt="Screenshot of the Transactions screen for the Fitcoin iOS app" style="max-width: 32%;">
+            <img src="assets/images/fitcoin/fitcoin_unity_punch.png" alt="Screenshot of the Games screen for the Fitcoin iOS app" style="max-width: 32%;">
+        </div>
+
+    </div>
     
     <hr/>
     <h2>What I Learned From This Project</h2>
     <p>
         <ul>
-            <li>Item 1</li>
-            <li>Item 2</li>
-            <li>Item 3</li>
+            <li>Server and REST(ish) API design</li>
+            <li>Working with the MongoDB database system</li>
+            <li>Interfacing a SwiftUI app with a REST API</li>
+            <li>Interfacing a Unity C# game with a REST API</li>
         </ul>
-    </p> -->
+    </p>
 </div>
