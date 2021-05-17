@@ -202,6 +202,16 @@ body {
     /* font-family: 'Roboto', sans-serif; */
 }
 
+div.highlight {
+    padding: 1em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+}
+
+pre.highlight {
+    margin: 0em;
+}
+
 .subheader {
     color: grey;
 }
@@ -306,6 +316,10 @@ body {
 
     a {
         color: rgb(255, 160, 160);
+    }
+
+    .text-muted {
+        color: rgb(189, 189, 189) !important;
     }
 
 } 

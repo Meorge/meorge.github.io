@@ -1,14 +1,17 @@
 - name: Home
   link: /
 
+- name: Blog
+  link: /blog.html
+
+- name: Resumé
+  link: /resume.html
+
 - name: GitHub
   link: https://github.com/Meorge
 
 - name: GitLab
   link: https://gitlab.com/Meorge
-
-- name: Resumé
-  link: /resume.html
 
 - name: Contact
   link: /contact.html
