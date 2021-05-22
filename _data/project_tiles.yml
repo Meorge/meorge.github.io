@@ -1,18 +1,4 @@
 active:
-  - name: Fitcoin
-    logo: fitcoin_logo.png
-    description: A virtual currency that rewards users for taking care of themselves
-    tags:
-      - python
-      - mongodb
-      - flask
-      - swift
-      - swiftui
-      - cs
-      - unity
-    buttons:
-      more: fitcoin.html
-
   - name: Canvas
     logo: canvas_macOS_icon.png
     description: A native macOS app for accessing school materials
@@ -32,6 +18,28 @@ active:
       more: sneaksters.html
 
 previous:
+  - name: InputHints
+    description: A simple library for displaying controller input hints in Unity games
+    tags:
+      - cs
+      - unity
+    buttons:
+      github: https://github.com/Meorge/InputHints
+      
+  - name: Fitcoin
+    logo: fitcoin_logo.png
+    description: A virtual currency that rewards users for taking care of themselves
+    tags:
+      - python
+      - mongodb
+      - flask
+      - swift
+      - swiftui
+      - cs
+      - unity
+    buttons:
+      more: fitcoin.html
+
   - name: CalLog
     logo: callog_logo.png
     description: An app for tracking calorie intake and output

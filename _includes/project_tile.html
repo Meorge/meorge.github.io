@@ -6,9 +6,11 @@
                 {% endif %}
                 {{ include.project.name }}
         </h2>
-        {% for lang_tag in include.project.tags %}
-            {% include lang_tag.html id=lang_tag is_large=false %}
-        {% endfor %}
+        <div class="lang-group">
+            {% for lang_tag in include.project.tags %}
+                {% include lang_tag.html id=lang_tag is_large=false %}
+            {% endfor %}
+        </div>
         <p style="padding-top: 10px;">{{ include.project.description }}</p>
         <p>
             {% if include.project.buttons.more %}
