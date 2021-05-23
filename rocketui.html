@@ -1,0 +1,95 @@
+---
+layout: default
+title: RocketUI
+---
+
+{% capture product_tags %}
+<div class="col">
+    {% include lang_tag.html id="cs" is_large=true %}
+    {% include lang_tag.html id="unity" is_large=true %}
+</div>
+{% endcapture %}
+
+{% capture buttons %}
+{% endcapture %}
+
+{%
+    include jumbotron/jumbotron_product.html
+    color_style="jumbotron-zenith2020"
+    logo="/assets/images/rocketui_logo.png"
+    name="RocketUI"
+    tags=product_tags
+    buttons=buttons
+%}
+
+<div class="container">
+    <h3>About This Project</h3>
+    <p><i>RocketUI</i> was developed for the Clark Aerospace Program's entry in the <a href="https://spaceportamericacup.com">2019 Spaceport America Cup</a>. In this competition,
+    Clark Aerospace designed and built a rocket and payload to be sent to 10,000 feet (3,048 meters) in the New Mexico desert. The team wanted to be able to record information from
+    the payload in near-realtime. <i>RocketUI</i>'s goal was to perform this task efficiently while also ensuring the information it displayed was easy for people to understand without
+    needing much background knowledge.</p>
+
+
+    <h3>Screenshots</h3>
+    <p><b>Note: These screenshots were taken at different points in development.</b></p>
+
+    <p><i>RocketUI</i> featured two main views: the <b>3D view</b> and the <b>Overhead view</b>.</p>
+
+    <p>In the <b>3D view</b>, a model of the rocket was displayed. Stripes on the rocket represented different components, and would change color according to the temperature or status
+    of those parts; for example, if the avionics bay was overheating, the corresponding stripe on the rocket would appear bright red. In addition to displaying component statuses, the 3D
+    model of the rocket would also rotate itself to match the orientation being reported by the payload.</p>
+    <div class="text-center">
+        <img src="/assets/images/rocketui/rocketui_3d_older.png" alt="Screenshot of the 3D view in RocketUI. The center of the screen shows a rocket. The right-hand side has placeholder information on the position and temperature of the rocket." style="max-width: 80%;">
+    </div>
+
+    <hr>
+    <p>In the <b>Overhead view</b>, a map of the area surrounding the launch site was displayed, with the rocket's last reported position as well as the ground station's position overlaid on it.
+    The map data was sourced from Mapbox, and I worked with people from the company to get Unity to cache and display map data without needing an active Internet connection. (The environment displayed
+    around the rocket in the 3D view was also based on real-world map data from Mapbox, but since it was in the desert, it appeared flat.)</p>
+    <div class="text-center">
+        <img src="/assets/images/rocketui/rocketui_overhead_older.png" alt="Screenshot of the Overhead view in RocketUI. The center of the screen displays a map of the desert area near Las Cruces, New Mexico." style="max-width: 80%;">
+    </div>
+
+    <hr>
+    <p><i>RocketUI</i> also featured a <b>Timeline</b> view, which would display the current time of the mission and relate it to important points, such as reaching the 10,000-foot apogee and landing on
+    the ground.</p>
+    <div class="text-center">
+        <img src="/assets/images/rocketui/rocketui_timeline.png" alt="Screenshot of the Timeline view in RocketUI. The screen displays 'T+14:20' in large characters, with 'On Schedule' below it. At the bottom of the screen is a line showing the progress through a mission, with stages 'Takeoff', 'Apogee', 'Parachute Deployed', and 'Landing'." style="max-width: 80%;">
+    </div>
+
+    <hr>
+
+    <p>In addition to the main <i>RocketUI</i> software, I adapted a version of my mobile app, <i>Zenith</i> (not to be confused with <i>Zenith 2020</i>), to help us recover the rocket. The user could
+    simply type in the GPS coordinates where the rocket landed (as reported by the payload), and the app would use the phone's built-in sensors to point them in the direction of the landing site.</p>
+    <div class="text-center">
+        <img src="/assets/images/rocketui/rocketui_recovery.png" alt="" style="max-width: 20%;">
+    </div>
+    <hr>
+    <p>For the 2020 Spaceport America Cup, I started creating an updated version of <i>RocketUI</i>, with the goal of further streamlining the design and eliminating the need for the 3D view. Ultimately,
+    I made the decision to leave Unity and C#, and switched to using C++ and Qt to build <a href="zenith2020.html"><i>Zenith 2020</i></a>.</p>
+    <div class="text-center">
+        <img src="/assets/images/rocketui/rocketui_nulls.png" alt="Screenshot of the Balance screen for the Fitcoin iOS app" style="max-width: 80%;">
+    </div>
+    <hr>
+
+    <h3>Live Demonstration</h3>
+    <p>Our team was interviewed by Twitch streamer <a href="https://www.twitch.tv/dasvaldez">DasValdez</a> while at the launch site for the Spaceport America Cup, where I performed a live demonstration of <i>RocketUI</i> and my
+    accompanying rocket recovery phone app:</p>
+
+    <div class="text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xObBKNPIMMg?start=450" title="YouTube video player" style="border: 0px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <hr>
+    
+    <h3>What I Learned From This Project</h3>
+    <p>
+        <ul>
+            <li>User interface design</li>
+            <li>Collaborating with businesses and organizations</li>
+            <li>Serial port communication</li>
+            <li>Encoding and decoding binary data</li>
+            <li>Working as part of a large team</li>
+        </ul>
+    </p>
+</div>
