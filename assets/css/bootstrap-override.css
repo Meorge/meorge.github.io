@@ -276,6 +276,18 @@ pre.highlight {
     padding-top: 30px;
 }
 
+blockquote.blockquote {
+    /* border: 1px solid black; */
+    border-left: 2px solid rgb(150, 150, 150);
+    font-size: 16px;
+    margin-left: 20px;
+    padding-left: 10px;
+
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(100, 100, 100);
+}
+
 @media (prefers-color-scheme: dark) {
     body {
         background: #1F1F1F;
@@ -324,6 +336,10 @@ pre.highlight {
 
     .text-muted {
         color: rgb(189, 189, 189) !important;
+    }
+
+    blockquote.blockquote {
+        color: rgb(200, 200, 200);
     }
 
 } 
