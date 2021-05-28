@@ -8,10 +8,12 @@ title: Blog
      %}
 <div class="container">
     {% for post in site.posts %}
-        <div class="proj-item">
+    {% if post.visible %}
+        <div class="proj-item mb-3">
             <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
             <i>{{ post.date | date_to_string }}</i>
             <p>{{ post.excerpt }}</p>
         </div>
+    {% endif %}
     {% endfor %}
 </div>
