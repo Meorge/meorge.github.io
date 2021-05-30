@@ -133,6 +133,14 @@ previous:
       - unity
 
 fun:
+  - name: HD-2D Generator DIY
+    logo: hd2ddiy_logo.png
+    description: Make your own HD-2D title cards!
+    tags:
+      - js
+    buttons:
+      try: hd2dgen.html
+      
   - name: Paraphrasinator
     logo: paraphrasinator_logo.png
     description: A small web app for paraphrasing an existing piece of text. GPT-3 quivers in fear.

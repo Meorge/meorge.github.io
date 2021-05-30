@@ -1,0 +1,44 @@
+---
+layout: default
+title: HD-2D Generator DIY
+---
+<link rel="preconnect" href="https://fonts.gstatic.com"> 
+<link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap" rel="stylesheet">
+
+<div class="container" style="padding-top: 3.5rem;">
+    <h2>HD-2D Generator DIY</h2>
+    <p>
+        Create your own HD-2D title cards here by filling in the text fields.
+        You can add as many rows of text as you'd like by pressing the <strong>Add</strong> button.</p>
+        <div class="form-group">
+            <input type="text" class="form-control mb-3" id="projectName" placeholder="project" value="project">
+            <div id="rowContainer">
+
+            </div>
+            <button class="btn btn-success mb-3" type="button" id="addRow" onclick="addRow()">Add</button>
+
+
+            <div class="row">
+                <div class="col">
+                    <label for="exampleColorInput" class="form-label">Background color</label>
+                    <input type="color" class="form-control mb-3 form-control-color" id="backgroundColor" value="#000000" title="Background color">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="transparentBackground">
+                        <label class="form-check-label" for="transparentBackground">
+                        Transparent background
+                        </label>
+                    </div>
+                </div>
+                <div class="col">
+                    <label for="exampleColorInput" class="form-label">Foreground color</label>
+                    <input type="color" class="form-control mb-3 form-control-color" id="textColor" value="#ffffff" title="Text color">
+                </div>
+            </div>
+        </div>
+    
+    <br/>
+    <button class="btn btn-primary" onclick="buildObjAndDraw()">Generate</button>
+    <br></br>
+    <img src="/assets/images/triangle_strategy_default.png" class="w-100" id="output" alt="Generated image"/>
+</div>
+<script type="text/javascript" src="/assets/js/hd2dgen.js"></script>
