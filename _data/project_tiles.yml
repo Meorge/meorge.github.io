@@ -19,6 +19,7 @@ active:
 
 previous:
   - name: InputHints
+    logo: inputhints_logo.png
     description: A simple library for displaying controller input hints in Unity games
     tags:
       - cs
@@ -50,6 +51,7 @@ previous:
       gitlab: https://gitlab.com/Meorge/CalLog
 
   - name: Tweetinator
+    logo: tweetinator_logo.png
     description: A local web server for scheduling Tweets
     tags:
       - python
@@ -132,6 +134,7 @@ previous:
 
 fun:
   - name: Paraphrasinator
+    logo: paraphrasinator_logo.png
     description: A small web app for paraphrasing an existing piece of text. GPT-3 quivers in fear.
     tags:
       - python
