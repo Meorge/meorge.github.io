@@ -26,7 +26,7 @@ const EXAMPLES = [
     },
     {
         'sysname': 'macOS',
-        'vername': 'Monterrey'
+        'vername': 'Monterey'
     },
     {
         'sysname': 'macOS',
@@ -73,17 +73,26 @@ function getNewFontSize(text_width, total_width, padding, original_font_size) {
 }
 
 function buildObjAndDraw() {
+    let img = document.getElementById('backgroundImage');
+
+    let transparentBG = document.getElementById('transparentBackground').checked;
+    let url = '';
+    if (!transparentBG && img.files && img.files[0]) {
+        url = URL.createObjectURL(img.files[0]);
+        console.log(url);
+    }
+
     let obj = {
         'sysname': document.getElementById('macosName').value,
         'vername': document.getElementById('versionName').value,
-        'bg': document.getElementById('backgroundImage').value
+        'bg': url
     };
 
     predraw(obj);
 }
 
 function predraw(obj) {
-    if (obj.bg == '') {
+    if (obj.bg == '' || obj.bg == null) {
         draw(obj, null, null);
         return;
     }

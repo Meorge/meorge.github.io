@@ -7,15 +7,23 @@ title: Every macOS DIY
     <p>
         Create your own version of macOS by filling in the text fields.
     </p>
+    <p>
+        On Apple platforms, the font should default to San Francisco, the native Apple font. As fallbacks, Helvetica Neue and then the default system sans-serif font are used.
+    </p>
     <div class="form-group">
         <input type="text" class="form-control mb-3" id="macosName" placeholder="macOS" value="macOS">
         <input type="text" class="form-control mb-3" id="versionName" placeholder="Big Sur" value="Big Sur">
-        <div class="row">
-            <div class="col">
-                <label for="backgroundImage" class="form-label">Background image URL (leave blank for transparent background)</label>
-                <input type="text" class="form-control mb-3" id="backgroundImage" placeholder="" value="https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-3840x2160-1455.jpg">
-            </div>
+
+        <label for="backgroundImage" class="form-label">Background image: </label>
+        <input type="file" id="backgroundImage" /> 
+
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="transparentBackground">
+            <label class="form-check-label" for="transparentBackground">
+            Force transparent background
+            </label>
         </div>
+        
     </div>
     <button class="btn btn-primary" onclick="buildObjAndDraw()">Generate</button>
     <br></br>
