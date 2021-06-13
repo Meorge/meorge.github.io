@@ -1,0 +1,24 @@
+---
+layout: default
+title: Every macOS DIY
+---
+<div class="container" style="padding-top: 3.5rem;">
+    <h2>Every macOS DIY</h2>
+    <p>
+        Create your own version of macOS by filling in the text fields.
+    </p>
+    <div class="form-group">
+        <input type="text" class="form-control mb-3" id="macosName" placeholder="macOS" value="macOS">
+        <input type="text" class="form-control mb-3" id="versionName" placeholder="Big Sur" value="Big Sur">
+        <div class="row">
+            <div class="col">
+                <label for="backgroundImage" class="form-label">Background image URL (leave blank for transparent background)</label>
+                <input type="text" class="form-control mb-3" id="backgroundImage" placeholder="" value="https://4kwallpapers.com/images/wallpapers/macos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-3840x2160-1455.jpg">
+            </div>
+        </div>
+    </div>
+    <button class="btn btn-primary" onclick="buildObjAndDraw()">Generate</button>
+    <br></br>
+    <img src="" class="w-100" id="output" alt="Generated image"/>
+</div>
+<script type="text/javascript" src="/assets/js/macosgen.js"></script>

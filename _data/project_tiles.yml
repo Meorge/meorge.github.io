@@ -133,6 +133,14 @@ previous:
       - unity
 
 fun:
+  - name: macOS DIY
+    logo: macosdiy_logo.png
+    description: Make your own macOS versions!
+    tags:
+      - js
+    buttons:
+      try: macosgen.html
+
   - name: HD-2D Generator DIY
     logo: hd2ddiy_logo.png
     description: Make your own HD-2D title cards!
