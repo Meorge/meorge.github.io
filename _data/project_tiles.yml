@@ -1,4 +1,25 @@
 active:
+  - name: VideoSync
+    description: A tool for viewing Delta RMC plot data synchronized with recorded video
+    tags:
+      - python
+      - qt
+      - swift
+      - swiftui
+  - name: SwiftDMCP
+    description: A Swift package for interfacing with Delta RMC motion controllers
+    tags:
+      - swift
+  - name: "Atticus: Boy Genius"
+    description: An <i>Ace Attorney</i>- and <i>Danganronpa</i>-inspired visual novel about middle school mysteries
+    tags:
+      - cs
+      - unity
+  - name: Untitled Orb Game
+    description: A small game about navigating an orb to a goal
+    tags:
+      - cs
+      - unity
   - name: Canvas
     logo: canvas_macOS_icon.png
     description: A native macOS app for accessing school materials
@@ -7,7 +28,6 @@ active:
       - swiftui
     buttons:
       more: canvas-mac.html
-
   - name: Sneaksters
     logo: sneaksters_logo.svg
     description: A collaborative party game about stealing treasure
