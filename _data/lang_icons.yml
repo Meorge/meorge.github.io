@@ -47,7 +47,7 @@ git:
   icon: Git
 
 qt:
-  name: Qt/PyQt
+  name: Qt
   icon: Qt
 
 mongodb:

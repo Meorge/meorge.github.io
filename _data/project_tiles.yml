@@ -1,22 +1,13 @@
 active:
   - name: VideoSync
+    logo: videosync_logo.png
     description: A tool for viewing Delta RMC plot data synchronized with recorded video
     tags:
-      - python
+      - cpp
       - qt
-      - swift
-      - swiftui
-  - name: SwiftDMCP
-    description: A Swift package for interfacing with Delta RMC motion controllers
-    tags:
-      - swift
+
   - name: "Atticus: Boy Genius"
     description: An <i>Ace Attorney</i>- and <i>Danganronpa</i>-inspired visual novel about middle school mysteries
-    tags:
-      - cs
-      - unity
-  - name: Untitled Orb Game
-    description: A small game about navigating an orb to a goal
     tags:
       - cs
       - unity
@@ -36,8 +27,25 @@ active:
       - unity
     buttons:
       more: sneaksters.html
+  - name: Memeinator
+    description: An engine for building images from templates
+    tags:
+      - python
+      - qt
 
 previous:
+  - name: VideoSync Py
+    logo: videosync_logo.png
+    description: A tool for viewing Delta RMC plot data synchronized with recorded video
+    tags:
+      - python
+      - qt
+
+  - name: SwiftDMCP
+    description: A Swift package for interfacing with Delta RMC motion controllers
+    tags:
+      - swift
+
   - name: InputHints
     logo: inputhints_logo.png
     description: A simple library for displaying controller input hints in Unity games

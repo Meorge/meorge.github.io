@@ -36,6 +36,17 @@ education:
       </ul>
 
 work:
+  - title: Software Development Intern
+    subtitle_large: Delta Computer Systems
+    subtitle: May 2021 - present
+    size: 12
+    body: >
+      <ul>
+        <li>Developed user-facing software using the Qt Framework</li>
+        <li>Developed Swift packages and iPadOS apps using SwiftUI</li>
+        <li>Worked with Win32 APIs</li>
+      </ul>
+      
   - title: Lab Aide for Computer Science
     subtitle: Spring 2019 - Spring 2020
     size: 12
