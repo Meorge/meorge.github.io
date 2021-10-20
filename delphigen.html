@@ -1,0 +1,49 @@
+---
+layout: default
+title: Delphi Generator
+extra_css: <link rel="stylesheet" href="/assets/css/delphi.css">
+---
+<div class="container" style="padding-top: 3.5rem;">
+    <h2>Delphi DIY</h2>
+    <p>
+        So today (19 October 2021) I saw that the <a href="https://allenai.org">Allen Institute for AI</a>
+        put up a webpage for an AI they've made called <a href="https://delphi.allenai.org/">Delphi</a>,
+        which attempts to give moral judgements on whatever input you supply it. As everyone knows,
+        there's nothing that can go wrong with artificial intelligence, especially when it comes to making
+        moral judgements.
+    </p>
+    <p>
+        One issue I have with Delphi is that it can give judgements that I do not agree with. To remedy
+        this problem, I have created my own version of Delphi which will always support my positions.
+        To keep this project private would be immoral (I asked it), so I decided to share it with you all!
+    </p>
+    <p>
+        Simply enter the Delphi input and output text below. You can then take a screenshot of the resulting
+        card and post it on Twitter or whatever.
+    </p>
+
+    <div class="form-group">
+        <input type="text" class="form-control mb-3" id="inputText" placeholder="Input" value="Input goes here">
+        <input type="text" class="form-control mb-3" id="outputText" placeholder="Output" value="Output goes here">
+    </div>
+    <button class="btn btn-primary" onclick="makeDelphi()">Ponder (briefly)</button>
+
+    <div class="delphi">
+        <div class="delphi-inner">
+            <div class="delphi-message">Delphi says:</div>
+            <div class="delphi-desc">
+                <span class="delphi-span">
+                    <q id="input">Input goes here</q>
+                    <br/>
+                    - 
+                    <span class="delphi-judgement">
+                        <span class="delphi-innerjudgement" id="output">
+                            Output goes here
+                        </span>
+                    </span>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="/assets/js/delphigen.js"></script>

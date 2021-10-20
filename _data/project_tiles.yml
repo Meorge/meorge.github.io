@@ -161,6 +161,14 @@ previous:
       - unity
 
 fun:
+  - name: Delphi DIY
+    logo: delphidiy_logo.png
+    description: A sophisticated computational model for descriptive ethics (that always agrees with you).
+    tags:
+      - js
+    buttons:
+      try: delphigen.html
+
   - name: macOS DIY
     logo: macosdiy_logo.png
     description: Make your own macOS versions!
