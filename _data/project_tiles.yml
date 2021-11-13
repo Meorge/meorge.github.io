@@ -1,4 +1,9 @@
 active:
+  - name: Genni
+    description: An easy-to-use app for using text-generation machine learning models
+    tags:
+      - python
+      - qt
   - name: VideoSync
     logo: videosync_logo.png
     description: A tool for viewing Delta RMC plot data synchronized with recorded video
@@ -11,14 +16,6 @@ active:
     tags:
       - cs
       - unity
-  - name: Canvas
-    logo: canvas_macOS_icon.png
-    description: A native macOS app for accessing school materials
-    tags:
-      - swift
-      - swiftui
-    buttons:
-      more: canvas-mac.html
   - name: Sneaksters
     logo: sneaksters_logo.svg
     description: A collaborative party game about stealing treasure
@@ -27,13 +24,13 @@ active:
       - unity
     buttons:
       more: sneaksters.html
+
+previous:
   - name: Memeinator
     description: An engine for building images from templates
     tags:
       - python
       - qt
-
-previous:
   - name: VideoSync Py
     logo: videosync_logo.png
     description: A tool for viewing Delta RMC plot data synchronized with recorded video
@@ -87,7 +84,14 @@ previous:
       - flask
     buttons:
       github: https://github.com/Meorge/Tweetinator
-
+  - name: Canvas
+    logo: canvas_macOS_icon.png
+    description: A native macOS app for accessing school materials
+    tags:
+      - swift
+      - swiftui
+    buttons:
+      more: canvas-mac.html
   - name: Clock
     logo: clock_logo.png
     description: World clocks, countdowns, timers, alarms, and stopwatches for macOS
