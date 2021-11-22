@@ -1,9 +1,13 @@
 active:
   - name: Genni
+    logo: genni/genni_icon.png
     description: An easy-to-use app for using text-generation machine learning models
     tags:
       - python
       - qt
+    buttons:
+      github: https://github.com/Meorge/Genni
+      
   - name: VideoSync
     logo: videosync_logo.png
     description: A tool for viewing Delta RMC plot data synchronized with recorded video
