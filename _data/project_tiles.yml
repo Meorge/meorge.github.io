@@ -30,7 +30,16 @@ active:
       more: sneaksters.html
 
 previous:
-  - name: Memeinator
+  - name: JoyConUnity
+    logo: switch_unity/switch_unity_logo.png
+    description: Bindings for the Joy-Con and Pro Controller for Unity's Input System
+    tags:
+      - cs
+      - unity
+    buttons:
+      github: https://github.com/Meorge/JoyConUnityInputSystem
+
+  - name: Meme-O-Matic
     description: An engine for building images from templates
     tags:
       - python
@@ -58,7 +67,7 @@ previous:
       
   - name: Fitcoin
     logo: fitcoin_logo.png
-    description: A virtual currency that rewards users for taking care of themselves
+    description: A virtual (non-crypto!) currency that rewards users for taking care of themselves
     tags:
       - python
       - mongodb
