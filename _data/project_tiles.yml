@@ -20,6 +20,9 @@ active:
     tags:
       - cs
       - unity
+
+
+previous:
   - name: Sneaksters
     logo: sneaksters_logo.svg
     description: A collaborative party game about stealing treasure
@@ -27,9 +30,8 @@ active:
       - cs
       - unity
     buttons:
+      github: https://github.com/Meorge/SneakstersSource
       more: sneaksters.html
-
-previous:
   - name: JoyConUnity
     logo: switch_unity/switch_unity_logo.png
     description: Bindings for the Joy-Con and Pro Controller for Unity's Input System
