@@ -1,38 +1,33 @@
 education:
-  - title: Washington State University of Vancouver
-    subtitle: Summer 2020 - present
+  - title: Bachelor's in Computer Science (anticipated Spring 2022)
+    subtitle_large: Washington State University of Vancouver
+    subtitle: August 2020 - present
     size: 12
     body: >
-      <p>Currently:</p>
       <ul>
-          <li>Working towards BS in Computer Science</li>
-          <li>4.0 GPA</li>
+          <li>Cumulative GPA of 3.98</li>
           <li>President's Honor Roll</li>
+          <li>Working towards Minor's in Mathematics</li>
+          <li>Inducted member of the National Society of Leadership and Success (NSLS)</li>
       </ul>
 
-  - title: Clark College
-    subtitle: Summer 2018 - Summer 2020
+  - title: Associate's in Computer & Electrical Engineering
+    subtitle_large: Clark College
+    subtitle: September 2018 - August 2020
     size: 6
     body: >
-      <p>Graduated with:</p>
       <ul>
-          <li>Associate in Computer Engineering & Electrical Engineering</li>
-          <li>3.95 cumulative GPA</li>
+          <li>Cumulative GPA of 3.95; graduated with High Honors</li>
           <li>Vice President's List for all quarters</li>
-          <li>High Honors</li>
-          <li>Invited to Phi Theta Kappa</li>
-          <li>Served as President, Vice President, and Treasurer of Engineering & Computer Science Club</li>
-          <li>Participated in Clark Aerospace Program as software developer</li>
       </ul>
-  - title: Columbia River High School
-    subtitle: Summer 2014 - Summer 2018
+  - title: International Baccalaureate Diploma
+    subtitle_large: Columbia River High School
+    subtitle: September 2014 - June 2018
     size: 6
     body: >
-      <p>Graduated with:</p>
       <ul>
-        <li>International Baccalaurate Diploma</li>
-        <li>Washington State Seal of Biliteracy</li>
-        <li>Honors</li>
+        <li>Graduated with Honors</li>
+        <li>Awarded Washington State Seal of Biliteracy for Spanish</li>
       </ul>
 
 work:
