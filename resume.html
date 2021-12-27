@@ -17,9 +17,8 @@ title: Resumé
         {% endfor %}
     </div>
 </div>
-<hr/>
 
-<div class="container">
+<div class="container mt-5">
     <h1>Work & Volunteer Experience</h1>
     <div class="row">
         {% for tile in site.data.resume_tiles.work %}
@@ -27,9 +26,8 @@ title: Resumé
         {% endfor %}
     </div>
 </div>
-<hr />
 
-<div class="container">
+<div class="container mt-5">
     <h1>Skills</h1>
     <div class="row">
         <div class="col-md-12 my-2 d-flex">
@@ -67,22 +65,6 @@ title: Resumé
                 </div>
             </div>
         </div>
-        <!-- <div class="col-md-12 my-2 d-flex">
-            <div class="container proj-item">
-                <h2>Comfortable with Modern OSs</h2>
-                <div class="container">
-                    <div class="row">
-                        {% for item in site.data.operating_systems %}
-                        <div class="col-md-2 mb-2 mx-auto d-flex justify-content-center">
-                            <div class="card lang-card">
-                                <img src="assets/images/{{ item.icon }}" class="lang-card-ico" alt="">{{ item.name }}
-                            </div>
-                        </div>
-                        {% endfor %}
-                    </div>
-                </div>
-            </div>
-        </div>  -->
         {% for tile in site.data.resume_tiles.skills %}
             {% include resume_tile.html data=tile %}
         {% endfor %}
