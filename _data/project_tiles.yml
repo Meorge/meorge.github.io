@@ -15,12 +15,6 @@ active:
       - cpp
       - qt
 
-  - name: "Atticus: Boy Genius"
-    description: An <i>Ace Attorney</i>- and <i>Danganronpa</i>-inspired visual novel about middle school mysteries
-    tags:
-      - cs
-      - unity
-
 
 previous:
   - name: Sneaksters

@@ -6,38 +6,29 @@ title: Home
     header="Hello! It's nice to meet you."
     body="I'm a computer science student with a passion for making fun and/or useful software."
      %}
-<div class="container">
+<div class="container mt-4">
     <h2>Current Projects</h2>
-</div>
-<div class="container">
     <div class="row">
         {% for project in site.data.project_tiles.active %}
             {% include project_tile_lg.html project=project %}
         {% endfor %}
     </div>
-    <hr>
 </div>
 
-<div class="container">
+<div class="container mt-4">
     <h2>Previous Projects</h2>
-</div>
-<div class="container">
     <div class="row">
         {% for project in site.data.project_tiles.previous %}
             {% include project_tile.html project=project %}
         {% endfor %}
     </div>
-    <hr>
 </div>
 
-<div class="container">
+<div class="container mt-4">
     <h2>Fun Stuff</h2>
-</div>
-<div class="container">
     <div class="row">
         {% for project in site.data.project_tiles.fun %}
             {% include project_tile.html project=project %}
         {% endfor %}
     </div>
-    <hr>
 </div>
