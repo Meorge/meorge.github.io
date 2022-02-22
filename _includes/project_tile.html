@@ -1,41 +1,43 @@
-<div class="col-md-4 my-2 d-flex">
-    <div class="container proj-item">
-        <h2 style="padding-bottom: 10px;">
-            {% if include.project.logo %}
-                <img src="/assets/images/{{ include.project.logo }}" style="height: 40pt; display: inline; vertical-align: middle;" alt="Logo">
-                {% endif %}
-                {{ include.project.name }}
+<div class="col-md-3 my-2 d-flex">
+    <div class="container proj-item text-center">
+        {% if include.project.logo %}
+        <img src="/assets/images/{{ include.project.logo }}" style="height: 80pt;" alt="Logo">
+        {% else %}
+        <div style="height: 80pt;"></div>
+        {% endif %}
+        <h2 class="text-center" style="padding-bottom: 10px;">
+            {{ include.project.name }}
         </h2>
-        <div class="lang-group">
+        <div class="lang-group text-center">
             {% for lang_tag in include.project.tags %}
                 {% include lang_tag.html id=lang_tag is_large=false %}
             {% endfor %}
         </div>
-        <p style="padding-top: 10px;">{{ include.project.description }}</p>
+        <p class="text-center" style="padding-top: 10px;">{{ include.project.description }}</p>
         <p>
             {% if include.project.buttons.more %}
-                <a class="btn btn-secondary" href="{{ include.project.buttons.more }}" role="button">
-                Learn more &raquo;
+                <a class="btn btn-secondary my-2" href="{{ include.project.buttons.more }}" role="button">
+                More &raquo;
                 </a>
             {% endif %}
 
             {% if include.project.buttons.try %}
-                <a class="btn btn-secondary" href="{{ include.project.buttons.try }}" role="button">
-                Try it out &raquo;
+                <a class="btn btn-secondary my-2" href="{{ include.project.buttons.try }}" role="button">
+                Try &raquo;
                 </a>
             {% endif %}
 
             {% if include.project.buttons.github %}
-                <a class="btn btn-secondary" href="{{ include.project.buttons.github }}" role="button">
+                <a class="btn btn-secondary my-2" href="{{ include.project.buttons.github }}" role="button">
                     <img src="assets/images/github.svg" height="25" class="inline-ico" alt="GitHub icon">
-                    View on GitHub &raquo;
+                    GitHub &raquo;
                 </a>
             {% endif %}
 
             {% if include.project.buttons.gitlab %}
-                <a class="btn btn-secondary" href="{{ include.project.buttons.gitlab }}" role="button">
+                <a class="btn btn-secondary my-2" href="{{ include.project.buttons.gitlab }}" role="button">
                     <img src="assets/images/gitlab.svg" height="25" class="inline-ico" alt="GitLab icon">
-                    View on GitLab &raquo;
+                    GitLab &raquo;
                 </a>
             {% endif %}
         </p>
