@@ -8,6 +8,17 @@ active:
 
 
 previous:
+  - name: "HP Site Flow Configurator"
+    description: A web application for configuring HP Site Flow factories
+    tags:
+      - js
+      - react
+
+  - name: "Sneaksters: Solo Mission"
+    description: A small single-player game about stealing treasure
+    tags:
+      - java
+
   - name: Genni
     logo: genni/genni_icon.png
     description: An easy-to-use app for using text-generation machine learning models
@@ -16,7 +27,14 @@ previous:
       - qt
     buttons:
       github: https://github.com/Meorge/Genni
-      
+
+  - name: BeepoVac Attack
+    description: A cooperative multiplayer game about cleaning a house
+    tags:
+      - java
+    buttons:
+      github: https://github.com/TheBrosGameDesignTeam/BeepoVacAttack
+
   - name: Sneaksters
     logo: sneaksters_logo.svg
     description: A collaborative party game about stealing treasure

@@ -173,6 +173,10 @@
     background-color: rgb(220, 50, 50) !important;
 }
 
+.lang-java {
+    background-color: rgb(75, 130, 190) !important;
+}
+
 .proj-item {
     border: 1px solid rgba(0, 0, 0, 0);
     border-radius: 7.5px;
