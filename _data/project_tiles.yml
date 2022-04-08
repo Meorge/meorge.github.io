@@ -29,6 +29,7 @@ previous:
       github: https://github.com/Meorge/Genni
 
   - name: BeepoVac Attack
+    logo: beepovac_logo.png
     description: A cooperative multiplayer game about cleaning a house
     tags:
       - java
