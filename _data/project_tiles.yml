@@ -9,12 +9,14 @@ active:
 
 previous:
   - name: "HP Site Flow Configurator"
+    logo: siteflow/site_flow_config_logo.png
     description: A web application for configuring HP Site Flow factories
     tags:
       - js
       - react
 
   - name: "Sneaksters: Solo Mission"
+    logo: sneaksters_solo_logo.png
     description: A small single-player game about stealing treasure
     tags:
       - java
