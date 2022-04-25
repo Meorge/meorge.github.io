@@ -14,6 +14,8 @@ previous:
     tags:
       - js
       - react
+    buttons:
+      github: https://github.com/WSUV2021-CSCapstoneTeam1/frontend
 
   - name: "Sneaksters: Solo Mission"
     logo: sneaksters_solo_logo.png
