@@ -39,3 +39,6 @@ mongodb:
 
 flask:
   name: Flask
+
+java:
+  name: Java

@@ -8,6 +8,21 @@ active:
 
 
 previous:
+  - name: "HP Site Flow Configurator"
+    logo: siteflow/site_flow_config_logo.png
+    description: A web application for configuring HP Site Flow factories
+    tags:
+      - js
+      - react
+    buttons:
+      github: https://github.com/WSUV2021-CSCapstoneTeam1/frontend
+
+  - name: "Sneaksters: Solo Mission"
+    logo: sneaksters_solo_logo.png
+    description: A small single-player game about stealing treasure
+    tags:
+      - java
+
   - name: Genni
     logo: genni/genni_icon.png
     description: An easy-to-use app for using text-generation machine learning models
@@ -16,7 +31,15 @@ previous:
       - qt
     buttons:
       github: https://github.com/Meorge/Genni
-      
+
+  - name: BeepoVac Attack
+    logo: beepovac_logo.png
+    description: A cooperative multiplayer game about cleaning a house
+    tags:
+      - java
+    buttons:
+      github: https://github.com/TheBrosGameDesignTeam/BeepoVacAttack
+
   - name: Sneaksters
     logo: sneaksters_logo.svg
     description: A collaborative party game about stealing treasure
@@ -36,10 +59,12 @@ previous:
       github: https://github.com/Meorge/JoyConUnityInputSystem
 
   - name: Meme-O-Matic
+    logo: memeomatic/memeomatic_logo.png
     description: An engine for building images from templates
     tags:
       - python
       - qt
+
   - name: VideoSync Py
     logo: videosync_logo.png
     description: A tool for viewing Delta RMC plot data synchronized with recorded video
@@ -47,7 +72,8 @@ previous:
       - python
       - qt
 
-  - name: SwiftDMCP
+  - name: DMCPKit
+    logo: dmcpkit/dmcpkit_logo.png
     description: A Swift package for interfacing with Delta RMC motion controllers
     tags:
       - swift
@@ -93,6 +119,7 @@ previous:
       - flask
     buttons:
       github: https://github.com/Meorge/Tweetinator
+
   - name: Canvas
     logo: canvas_macOS_icon.png
     description: A native macOS app for accessing school materials
@@ -101,6 +128,7 @@ previous:
       - swiftui
     buttons:
       more: canvas-mac.html
+
   - name: Clock
     logo: clock_logo.png
     description: World clocks, countdowns, timers, alarms, and stopwatches for macOS

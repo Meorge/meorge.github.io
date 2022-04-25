@@ -77,3 +77,7 @@ js:
 react:
   name: React
   icon: React
+
+java:
+  name: Java
+  icon: Java
