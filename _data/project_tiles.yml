@@ -57,10 +57,12 @@ previous:
       github: https://github.com/Meorge/JoyConUnityInputSystem
 
   - name: Meme-O-Matic
+    logo: memeomatic/memeomatic_logo.png
     description: An engine for building images from templates
     tags:
       - python
       - qt
+
   - name: VideoSync Py
     logo: videosync_logo.png
     description: A tool for viewing Delta RMC plot data synchronized with recorded video
@@ -115,6 +117,7 @@ previous:
       - flask
     buttons:
       github: https://github.com/Meorge/Tweetinator
+
   - name: Canvas
     logo: canvas_macOS_icon.png
     description: A native macOS app for accessing school materials
@@ -123,6 +126,7 @@ previous:
       - swiftui
     buttons:
       more: canvas-mac.html
+
   - name: Clock
     logo: clock_logo.png
     description: World clocks, countdowns, timers, alarms, and stopwatches for macOS
