@@ -1,0 +1,106 @@
+---
+layout: default
+title: DALL·Edle
+extra_css: <link rel="stylesheet" href="/assets/css/dalledle.css">
+---
+<div class="container" style="padding-top: 3.5rem;">
+    <h2>DALL·Edle</h2>
+
+    <div class="text-center">
+        <img class="rounded" style="width: 50%" alt="" id="image-prompt">
+    </div>
+
+    <div class="text-center mb-3">
+        <h1 id="answer-area">Answer goes here</h1>
+        <a href="" id="post-link"></a>
+    </div>
+    <form onsubmit="submitAnswer(); return false;">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" id="player-guess" placeholder="Type your guess here...">
+            <button class="btn btn-primary" type="submit" id="submitButton">Submit</button>
+        </div>
+    </form>
+    <div class="text-center" id="previous-guesses"></div>
+
+    <div>
+        <h2>About</h2>
+        <p>
+            In DALL·Edle, you are given a post from the subreddit
+            <a href="https://www.reddit.com/r/weirddalle/">/r/weirddalle</a>,
+            and your goal is to guess the input prompt.
+        </p>
+        <p>
+            When your guess has a word that's in the input prompt, it will be
+            revealed above. Once you have all of the words in the correct order,
+            you win!
+        </p>
+        <p>
+            Unlike Wordle, games aren't tied to a specific day. Each time you
+            refresh the page, you'll have a new prompt to solve. As of my
+            writing this right now, there are a few hundred games loaded.
+        </p>
+        <p>
+            If you've got suggestions for how I can improve the game, please let
+            me know on Twitter <a href="https://twitter.com/_Meorge">@_Meorge</a>!
+        </p>
+        <h2>Limitations</h2>
+        <p>
+            I used Python scripts to generate the collection of games by
+            scraping submissions to /r/weirddalle.
+            The images themselves were cropped automatically, and the
+            solutions are the names of the Reddit posts. As a result, the game
+            has the following limitations:
+        <ul>
+            <li>
+                Depending on how the user originally posted their image,
+                you might be able to see the input prompt at the top.
+                Alternatively, you might not be able to see as much of the
+                output data. There also appear to be a few broken Imgur images
+                in there.
+            </li>
+            <li>
+                The game uses the title of the Reddit post as the input
+                prompt you're searching for. This is true for many posts
+                on the subreddit, but not all. Thus, it's possible the
+                "correct" answer the game is expecting will differ from
+                what the actual input prompt was.
+            </li>
+        </ul>
+        Because this was meant to be a quick little fun project, I didn't
+        want to spend too much time curating the game set. If by
+        some miracle this gets popular, I'll probably work more on
+        curation. Refresh the page in the meantime to get a new game.
+        </p>
+        <h2>Credit Disclaimer</h2>
+        <p>
+            Since it's arguable to what extent
+            <a href="https://huggingface.co/spaces/dalle-mini/dalle-mini">DALL·E mini</a>
+            outputs are "owned" by the users who gave it the prompt, I felt like
+            using subreddit posts with credit/attribution is sufficient. If you
+            think I should do something differently here, please let me know on
+            Twitter <a href="https://twitter.com/_Meorge">@_Meorge</a>.
+        </p>
+    </div>
+</div>
+
+<!-- From the Bootstrap docs https://getbootstrap.com/docs/5.2/components/modal/ -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">You guessed the prompt!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="victory-modal-body">
+                If you're seeing this text, then something got messed up.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/assets/js/weirddalle_submissions.js"></script>
+<script type="text/javascript" src="/assets/js/dalledle.js"></script>

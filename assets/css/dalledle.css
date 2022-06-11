@@ -1,0 +1,19 @@
+span.redacted {
+    color: black;
+    background-color: black;
+}
+
+span.correct-pos {
+    color: green;
+}
+
+span.incorrect-pos {
+    color: orange;
+}
+
+@media (prefers-color-scheme: dark) {
+    span.redacted {
+        color: white;
+        background-color: white;
+    }
+}
