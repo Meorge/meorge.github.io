@@ -1,14 +1,30 @@
 const CORRECT_ANSWER_ID = "answer-area";
 const PLAYER_GUESS_ID = "player-guess";
 const PREVIOUS_GUESSES_ID = "previous-guesses";
+const IMAGE_ID = "image-prompt";
+const POST_LINK_ID = "post-link";
 
 const VICTORY_MODAL_BODY_ID = "victory-modal-body";
 const VICTORY_MODAL = new bootstrap.Modal('#staticBackdrop');
 
-var correctAnswer = ["Donald", "Trump", "in", "Danganronpa"];
+var correctAnswer = [];
 var wordsGuessed = [];
 var guessesSoFar = [];
 var correctWordIndices = [];
+
+function initializeGame() {
+    let index = Math.floor(Math.random() * games.length);
+    console.log(`Using index ${index}`);
+    let obj = games[index];
+
+    correctAnswer = obj.title.split(" ");
+
+    // Load image
+    document.getElementById(IMAGE_ID).src = `/assets/dalledle_assets/images/${obj.id}.png`;
+    document.getElementById(POST_LINK_ID).href = obj.url;
+    document.getElementById(POST_LINK_ID).innerHTML = `Original post by user /u/${obj.author} on /r/weirddalle`;
+    updateCorrectAnswer();
+}
 
 function updateCorrectAnswer() {
     let outputString = "";
@@ -35,7 +51,7 @@ function updateCorrectAnswer() {
 
 function victory() {
     let guessPlural = guessesSoFar.length == 1 ? "guess" : "guesses";
-    let topText = `The prompt for this DALL-E output was <b>${correctAnswer.join(" ")}</b>.`;
+    let topText = `The prompt for this DALL-E output was <b>"${correctAnswer.join(" ")}"</b>.`;
     let bottomText = `You got it in ${guessesSoFar.length} ${guessPlural}!`;
 
     let modalBodyText = `${topText}<br>${bottomText}`;
@@ -60,11 +76,15 @@ function updateGuesses() {
             if (guessLowercase[i] === correctLowercase[i]) {
                 guessResult += `<span class="correct-pos">${guessWord}</span> `;
                 if (!correctWordIndices.includes(i)) {
-                    correctWordIndices.push(i);
+                    correctWordIndices.push(correctLowercase.indexOf(guessLowercase[i]));
                 }
+                
             }
             else if (correctLowercase.includes(guessLowercase[i])) {
                 guessResult += `<span class="incorrect-pos">${guessWord}</span> `;
+                if (!correctWordIndices.includes(correctLowercase.indexOf(guessLowercase[i]))) {
+                    correctWordIndices.push(correctLowercase.indexOf(guessLowercase[i]));
+                }
             }
             else {
                 guessResult += `${guessWord} `;
@@ -79,7 +99,6 @@ function updateGuesses() {
 
 function submitAnswer() {
     let answer = document.getElementById(PLAYER_GUESS_ID).value;
-    console.log(`Submitting answer: ${answer}`);
 
     // Add the player guess to the list of guesses
     guessesSoFar.push(answer);
@@ -97,4 +116,4 @@ function submitAnswer() {
     updateCorrectAnswer();
 }
 
-updateCorrectAnswer();
+initializeGame();
