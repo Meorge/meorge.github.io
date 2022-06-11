@@ -346,5 +346,12 @@ blockquote.blockquote {
         color: rgb(200, 200, 200);
     }
 
+    .modal-title {
+        color: black !important;
+    }
+
+    .modal-body {
+        color: black !important;
+    }
 } 
 

@@ -1,0 +1,42 @@
+---
+layout: default
+title: DALL-Edle
+extra_css: <link rel="stylesheet" href="/assets/css/dalledle.css">
+---
+<div class="container" style="padding-top: 3.5rem;">
+    <h2>DALL-Edle</h2>
+
+    <div class="text-center">
+        <img src="/assets/images/dalledle/donald_trump_in_danganronpa.png" class="rounded" style="width: 50%" alt="">
+    </div>
+
+    <div class="text-center">
+        <h1 class="display-6" id="answer-area">Donald <span class="redacted">Trump</span> in Danganronpa</h1>
+    </div>
+    <div class="input-group mb-3">
+        <input type="text" class="form-control" id="player-guess" placeholder="Type your guess here...">
+        <button class="btn btn-primary" onclick="submitAnswer()" id="submitButton" type="button">Submit</button>
+    </div>
+    <div class="text-center" id="previous-guesses"></div>
+</div>
+
+<!-- From the Bootstrap docs https://getbootstrap.com/docs/5.2/components/modal/ -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticBackdropLabel">You guessed the prompt!</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" id="victory-modal-body">
+                If you're seeing this text, then something got messed up.
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript" src="/assets/js/dalledle.js"></script>
