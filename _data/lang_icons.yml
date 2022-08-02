@@ -1,7 +1,3 @@
-python:
-  name: Python
-  icon: Python
-
 html:
   name: HTML/CSS
   icon: HTML5
@@ -22,6 +18,18 @@ swift:
   name: Swift
   icon: Swift
 
+swiftui:
+  name: SwiftUI
+  icon: Swift
+
+js:
+  name: JavaScript
+  icon: JavaScript
+
+react:
+  name: React
+  icon: React
+
 meteor:
   name: Meteor
   icon: Meteor
@@ -37,14 +45,6 @@ monogame:
 arduino:
   name: Arduino
   icon: Arduino
-
-bash:
-  name: Bash
-  icon: Bash
-
-git:
-  name: Git
-  icon: Git
 
 qt:
   name: Qt
@@ -62,22 +62,18 @@ scala:
   name: Scala
   icon: Scala
 
-swiftui:
-  name: SwiftUI
-  icon: Swift
+python:
+  name: Python
+  icon: Python
 
 flask:
   name: Flask
   icon: Flask
 
-js:
-  name: JavaScript
-  icon: JavaScript
+git:
+  name: Git
+  icon: Git
 
-react:
-  name: React
-  icon: React
-
-java:
-  name: Java
-  icon: Java
+bash:
+  name: Bash
+  icon: Bash

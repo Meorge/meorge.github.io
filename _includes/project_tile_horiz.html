@@ -15,6 +15,34 @@
                 {% endfor %}
             </div>
             <p style="padding-top: 10px;">{{ include.project.description }}</p>
+
+            <div>
+                {% if include.project.buttons.more %}
+                <a class="btn btn-secondary" href="{{ include.project.buttons.more }}" role="button">
+                Learn more &raquo;
+                </a>
+            {% endif %}
+
+            {% if include.project.buttons.try %}
+                <a class="btn btn-secondary" href="{{ include.project.buttons.try }}" role="button">
+                Try it out &raquo;
+                </a>
+            {% endif %}
+
+            {% if include.project.buttons.github %}
+                <a class="btn btn-secondary" href="{{ include.project.buttons.github }}" role="button">
+                    <img src="assets/images/github.svg" height="25" class="inline-ico">
+                    View on GitHub &raquo;
+                </a>
+            {% endif %}
+
+            {% if include.project.buttons.gitlab %}
+                <a class="btn btn-secondary" href="{{ include.project.buttons.gitlab }}" role="button">
+                    <img src="assets/images/gitlab.svg" height="25" class="inline-ico">
+                    View on GitLab &raquo;
+                </a>
+            {% endif %}
+            </div>
         </div>
     </div>
 

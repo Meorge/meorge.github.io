@@ -1,4 +1,9 @@
 education:
+  - title: Master's in Computer Science
+    subtitle_large: Washington State University of Vancouver
+    subtitle: August 2022 - present
+    size: 12
+
   - title: Bachelor's in Computer Science
     subtitle_large: Washington State University of Vancouver
     subtitle: August 2020 - May 2022
@@ -33,13 +38,13 @@ education:
 work:
   - title: Software Development Intern
     subtitle_large: Delta Computer Systems
-    subtitle: May 2021 - present
+    subtitle: May 2021 - July 2022
     size: 12
     body: >
       <ul>
         <li>Developed user-facing software using the Qt Framework</li>
         <li>Developed Swift packages and iPadOS apps using SwiftUI</li>
-        <li>Worked with Win32 APIs</li>
+        <li>Worked with Windows C and C++ APIs for applications and shell extensions</li>
       </ul>
       
   - title: Lab Aide for Computer Science
