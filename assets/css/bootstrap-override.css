@@ -184,6 +184,16 @@
     padding: 20px;
 }
 
+.proj-item-wide {
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 7.5px;
+    box-shadow: 0px 0px 4px #cfcfcf79;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 .color-office {
     background-color: rgb(205, 67, 36) !important;
 }
@@ -304,10 +314,12 @@ blockquote.blockquote {
         color: white !important;
     }
 
-    .proj-item {
+    .proj-item, .proj-item-wide {
         background-color: #2A2A2A !important;
         box-shadow: 0px 0px 4px #151515;
     }
+
+    
 
     .lang-card-ico {
         filter: invert(100%);

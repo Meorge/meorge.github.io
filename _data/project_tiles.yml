@@ -1,13 +1,25 @@
 active:      
+  - name: BeepoVac Bustle
+    description: A small single-player game about cleaning a house
+    tags:
+      - unity
+      - cs
+  - name: Vibrato
+    logo: Vibrato_logo.png
+    description: A Unity package for rich controller haptics
+    tags:
+      - unity
+      - cs
+    buttons:
+      github: https://github.com/Meorge/Vibrato
+
+previous:
   - name: VideoSync
     logo: videosync_logo.png
     description: A tool for viewing Delta RMC plot data synchronized with recorded video
     tags:
       - cpp
       - qt
-
-
-previous:
   - name: "HP Site Flow Configurator"
     logo: siteflow/site_flow_config_logo.png
     description: A web application for configuring HP Site Flow factories
