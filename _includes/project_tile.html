@@ -27,6 +27,13 @@
                 </a>
             {% endif %}
 
+            {% if include.project.buttons.itch %}
+            <a class="btn btn-secondary" href="{{ include.project.buttons.itch }}" role="button">
+                <img src="assets/images/itchio-logo-textless-black.svg" height="25" class="inline-ico">
+                View on itch.io &raquo;
+            </a>
+            {% endif %}
+
             {% if include.project.buttons.github %}
                 <a class="btn btn-secondary my-2" href="{{ include.project.buttons.github }}" role="button">
                     <img src="assets/images/github.svg" height="25" class="inline-ico" alt="GitHub icon">

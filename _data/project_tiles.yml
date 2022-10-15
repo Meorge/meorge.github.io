@@ -1,9 +1,14 @@
 active:      
+
+previous:
   - name: BeepoVac Bustle
     description: A small single-player game about cleaning a house
     tags:
       - unity
       - cs
+    buttons:
+      itch: https://meorge.itch.io/beepovac-bustle
+
   - name: Vibrato
     logo: Vibrato_logo.png
     description: A Unity package for rich controller haptics
@@ -12,8 +17,7 @@ active:
       - cs
     buttons:
       github: https://github.com/Meorge/Vibrato
-
-previous:
+      
   - name: VideoSync
     logo: videosync_logo.png
     description: A tool for viewing Delta RMC plot data synchronized with recorded video
