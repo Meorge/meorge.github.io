@@ -26,6 +26,10 @@ js:
   name: JavaScript
   icon: JavaScript
 
+java:
+  name: Java
+  icon: java
+
 react:
   name: React
   icon: React
@@ -77,3 +81,7 @@ git:
 bash:
   name: Bash
   icon: Bash
+
+godot:
+  name: Godot
+  icon: godot

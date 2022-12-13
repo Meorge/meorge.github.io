@@ -42,3 +42,6 @@ flask:
 
 java:
   name: Java
+
+godot:
+  name: Godot

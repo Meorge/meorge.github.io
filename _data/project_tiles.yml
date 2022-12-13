@@ -1,7 +1,22 @@
-active:      
+active:
+  - name: Objection! Engine (contributor)
+    description: A program that renders conversations as Ace Attorney scenes
+    tags:
+      - python
+    buttons:
+      github: https://github.com/LuisMayo/objection_engine
 
 previous:
+  - name: Don't Get Hit By The DVD Logo
+    logo: dvdgame_logo.png
+    description: A small single-player game about avoiding a bouncing DVD logo
+    tags:
+      - godot
+    buttons:
+      itch: https://meorge.itch.io/dont-get-hit-by-the-dvd-logo
+
   - name: BeepoVac Bustle
+    logo: beepovac_logo.png
     description: A small single-player game about cleaning a house
     tags:
       - unity
