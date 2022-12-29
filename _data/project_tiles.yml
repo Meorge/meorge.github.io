@@ -1,5 +1,5 @@
 active:
-  - name: Objection! Engine (contributor)
+  - name: Objection 4
     description: A program that renders conversations as Ace Attorney scenes
     tags:
       - python
@@ -7,6 +7,15 @@ active:
       github: https://github.com/LuisMayo/objection_engine
 
 previous:
+  - name: You Are A Tesla
+    logo: teslagame_logo.png
+    description: A small single-player game about Elon Musk
+    tags:
+      - unity
+      - cs
+    buttons:
+      itch: https://meorge.itch.io/you-are-a-tesla
+
   - name: Don't Get Hit By The DVD Logo
     logo: dvdgame_logo.png
     description: A small single-player game about avoiding a bouncing DVD logo
