@@ -1,5 +1,12 @@
 active:
+  - name: POV You Forgot Your Duolingo Lesson
+    logo: pov_duo_logo.png
+    description: A parody horror game about what happens when you miss your daily language practice
+    tags:
+      - unity
+      - cs
   - name: Objection 4
+    logo: objection_logo.png
     description: A program that renders conversations as Ace Attorney scenes
     tags:
       - python
@@ -7,6 +14,14 @@ active:
       github: https://github.com/LuisMayo/objection_engine
 
 previous:
+  - name: Cornhole VR
+    logo: cornhole_vr_logo.png
+    description: A basic VR adaptation of the classic outdoor game
+    tags:
+      - unity
+      - cs
+    buttons:
+      itch: https://meorge.itch.io/cornhole-vr
   - name: You Are A Tesla
     logo: teslagame_logo.png
     description: A small single-player game about Elon Musk

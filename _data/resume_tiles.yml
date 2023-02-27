@@ -36,6 +36,15 @@ education:
       </ul>
 
 work:
+  - title: Teaching Assistant
+    subtitle_large: Washington State University Vancouver
+    subtitle: August 2022 - present
+    size: 12
+    body: >
+      <ul>
+        <li>Graded student assignments and provided feedback</li>
+        <li>Communicated with students using Microsoft Teams</li>
+      </ul>
   - title: Software Development Intern
     subtitle_large: Delta Computer Systems
     subtitle: May 2021 - July 2022
